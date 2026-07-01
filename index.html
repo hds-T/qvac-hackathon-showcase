@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>QVAC Hackathon · Showcase</title>
+<style>
+  @font-face{font-family:"Geist";src:url("./assets/Geist.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+  :root{
+    --bg:#161718; --bg2:#171817; --card:#1e1f20; --card2:#252728;
+    --accent:#16e3c1; --ink:#0f1010; --text:#ECF1EE; --muted:#8ca59e; --muted2:#7c7d7e;
+    --line:rgba(48,80,72,.45); --line2:rgba(255,255,255,.06);
+    --r-card:14px; --r-btn:9px; --r-pill:999px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  [hidden]{display:none!important}
+  body{font-family:"Geist",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);-webkit-font-smoothing:antialiased;min-height:100vh;
+    background:radial-gradient(900px 460px at 80% -6%, rgba(22,227,193,.07), transparent 60%),linear-gradient(180deg,var(--bg2),var(--bg) 46%)}
+  a{color:inherit;text-decoration:none} svg{display:block}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+
+  header.top{position:sticky;top:0;z-index:40;backdrop-filter:blur(12px);background:linear-gradient(180deg,rgba(22,24,23,.86),rgba(22,24,23,.62));border-bottom:1px solid var(--line2)}
+  .top-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand .mark{height:22px} .brand .sep{width:1px;height:20px;background:var(--line)}
+  .brand .ed{font-size:13px;color:var(--muted)} .brand .ed b{color:var(--text);font-weight:600}
+
+  .vote{margin:18px 0 6px;display:flex;align-items:center;gap:16px;justify-content:space-between;flex-wrap:wrap;
+    background:linear-gradient(120deg,rgba(22,227,193,.12),rgba(22,227,193,.04));border:1px solid rgba(22,227,193,.32);border-radius:var(--r-card);padding:14px 18px}
+  .vote .l{display:flex;align-items:center;gap:12px} .vote .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(22,227,193,.18);animation:pulse 2s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+  .vote .t{font-size:14px} .vote .t b{font-weight:700}
+  .btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 18px;border:none;border-radius:var(--r-btn);font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;transition:.12s;white-space:nowrap}
+  .btn.white{background:var(--text);color:var(--ink)} .btn.white:hover{background:#fff;transform:translateY(-1px)}
+
+  .shell{display:grid;grid-template-columns:248px 1fr;gap:26px;padding:22px 0 70px;align-items:start}
+
+  /* left filter panel */
+  .side{position:sticky;top:84px;display:flex;flex-direction:column;gap:22px}
+  .side .grp .gh{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted2);margin:0 0 8px 6px}
+  .opt{display:flex;align-items:center;gap:10px;width:100%;text-align:left;height:38px;padding:0 12px;border:none;border-radius:10px;background:transparent;color:var(--muted);font-family:inherit;font-size:13.5px;font-weight:500;cursor:pointer;transition:.12s}
+  .opt:hover{background:var(--card);color:var(--text)}
+  .opt.on{background:var(--card2);color:var(--text);font-weight:600}
+  .opt .dot{width:9px;height:9px;border-radius:3px;flex:0 0 auto;background:var(--muted2)}
+  .opt .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .opt .ct{font-size:11px;color:var(--muted2);font-weight:600}
+  .opt.on .ct{color:var(--muted)}
+  .side .reset{margin-left:6px;font-size:12px;color:var(--muted);background:none;border:none;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+  .side .reset:hover{color:var(--accent)}
+
+  /* results */
+  .main{min-width:0}
+  .resbar{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px}
+  .resbar h2{font-size:22px;font-weight:700;letter-spacing:-.01em}
+  .resbar .cnt{font-size:13px;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line2);border-radius:var(--r-card);overflow:hidden;cursor:pointer;transition:.16s;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-3px);border-color:rgba(22,227,193,.4)}
+  .cover{aspect-ratio:5/3;position:relative;background:#1b1f1c;overflow:hidden}
+  .cover img{width:100%;height:100%;object-fit:cover}
+  .cover .tag{position:absolute;top:10px;left:10px;display:inline-flex;align-items:center;gap:6px;height:23px;padding:0 9px;border-radius:var(--r-pill);font-size:11px;font-weight:700;background:rgba(15,16,16,.7);backdrop-filter:blur(4px);border:1px solid var(--line2)}
+  .cover .tag .swatch{width:7px;height:7px;border-radius:2px}
+  .c-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:6px;flex:1}
+  .c-name{font-size:16px;font-weight:600;letter-spacing:-.01em}
+  .c-team{font-size:12.5px;color:var(--muted)}
+  .c-meta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:7px}
+  .c-cat{font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+  .c-links{display:flex;gap:6px;color:var(--muted2)} .c-links svg{width:15px;height:15px}
+  .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:50px 0}
+
+  /* modal */
+  .scrim{position:fixed;inset:0;z-index:60;background:rgba(8,12,10,.72);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:24px}
+  .scrim.show{display:flex}
+  .modal{width:760px;max-width:100%;max-height:90vh;overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:18px}
+  .m-cover{aspect-ratio:16/7;position:relative;background:#1b1f1c} .m-cover img{width:100%;height:100%;object-fit:cover}
+  .m-close{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:50%;border:none;cursor:pointer;background:rgba(15,16,16,.66);color:var(--text);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+  .m-close:hover{background:rgba(15,16,16,.9)}
+  .m-body{padding:24px 26px 28px}
+  .m-tag{display:inline-flex;align-items:center;gap:7px;height:26px;padding:0 11px;border-radius:var(--r-pill);font-size:12px;font-weight:700}
+  .m-name{font-size:30px;font-weight:700;letter-spacing:-.02em;margin:12px 0 4px}
+  .m-sub{color:var(--muted);font-size:14px;min-height:1px}
+  .m-perma{display:inline-block;margin-top:9px;font-size:13px;font-weight:600;color:var(--accent)}
+  .m-perma:hover{text-decoration:underline}
+  .m-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}
+  .m-field{background:var(--bg);border:1px solid var(--line2);border-radius:10px;padding:11px 13px}
+  .m-field .k{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted2)}
+  .m-field .v{font-size:14px;font-weight:600;margin-top:3px}
+  .m-desc{font-size:15px;line-height:1.65;color:#cdd6d1}
+  .m-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+  .lk{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 15px;border-radius:var(--r-btn);background:var(--card2);border:1px solid var(--line2);font-size:13px;font-weight:600;cursor:pointer;transition:.12s}
+  .lk:hover{border-color:rgba(22,227,193,.45);color:var(--accent)} .lk svg{width:16px;height:16px}
+  .lk.primary{background:var(--accent);color:var(--ink);border-color:transparent} .lk.primary:hover{color:var(--ink);background:#2bf0d0}
+
+  /* mobile: filter panel becomes a top bar of its own */
+  @media(max-width:840px){
+    .shell{grid-template-columns:1fr}
+    .side{position:static;flex-direction:row;flex-wrap:wrap;gap:14px;padding:12px;background:var(--card);border:1px solid var(--line2);border-radius:var(--r-card)}
+    .side .grp{flex:1;min-width:200px}
+    .m-grid{grid-template-columns:1fr 1fr}
+  }
+</style>
+</head>
+<body>
+  <header class="top"><div class="wrap top-in">
+    <div class="brand"><img class="mark" src="./assets/qvac-wordmark.svg" alt="QVAC"><span class="sep"></span><span class="ed">Hackathon <b id="edition"></b></span></div>
+  </div></header>
+
+  <div class="wrap">
+    <div class="vote" id="voteBanner">
+      <div class="l"><span class="dot"></span><span class="t"><b>Voting is open.</b> <span id="voteSub"></span></span></div>
+      <a class="btn white" id="voteBtn" target="_blank" rel="noopener">Cast your vote →</a>
+    </div>
+
+    <div class="shell">
+      <aside class="side">
+        <div class="grp"><div class="gh">Track</div><div id="trackList"></div></div>
+        <div class="grp"><div class="gh">Category</div><div id="catList"></div></div>
+        <button class="reset" id="reset">Reset filters</button>
+      </aside>
+      <main class="main">
+        <div class="resbar"><h2 id="resTitle">All projects</h2><span class="cnt" id="resCount"></span></div>
+        <div class="grid" id="grid"><div class="empty">Loading projects.</div></div>
+      </main>
+    </div>
+  </div>
+
+  <div class="scrim" id="scrim"><div class="modal" id="modal" role="dialog" aria-modal="true"></div></div>
+
+  <script src="./data.js?v=3"></script>
+  <script src="./cover.js?v=2"></script>
+  <script src="./core.js?v=3"></script>
+  <script>
+  (function(){
+    const {D,byId,coverHTML,linkIcons,linkButtons,categoriesIn,filterBy,detailMeta}=QH;
+    const TRACKS=D.tracks; let track="all", cat="all";
+
+    document.getElementById("edition").textContent=D.meta.edition;
+    document.getElementById("voteBtn").href=D.meta.voteUrl;
+    document.getElementById("voteSub").textContent=D.meta.voteDeadline?`Closes ${D.meta.voteDeadline}.`:"";
+    if(!D.meta.voteOpen) document.getElementById("voteBanner").hidden=true;
+
+    const tl=document.getElementById("trackList"), cl=document.getElementById("catList"), grid=document.getElementById("grid");
+
+    function renderTrackList(){
+      const opt=(id,name,count,color)=>`<button class="opt ${track===id?'on':''}" data-t="${id}">
+        <span class="dot" style="background:${color||'var(--muted2)'}"></span><span class="nm">${name}</span><span class="ct">${count}</span></button>`;
+      let h=opt("all","All tracks",D.projects.length,"#ECF1EE");
+      TRACKS.forEach(t=>h+=opt(t.id,t.name,D.projects.filter(p=>p.track===t.id).length,t.color));
+      tl.innerHTML=h;
+      tl.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{track=b.dataset.t;cat="all";renderAll();});
+    }
+    function renderCatList(){
+      const within=track==="all"?D.projects:D.projects.filter(p=>p.track===track);
+      const cats=categoriesIn(within);
+      const opt=(id,name,count)=>`<button class="opt ${cat===id?'on':''}" data-c="${id}"><span class="nm">${name}</span><span class="ct">${count}</span></button>`;
+      let h=opt("all","All categories",within.length);
+      cats.forEach(c=>h+=opt(c,c,within.filter(p=>p.category===c).length));
+      cl.innerHTML=h;
+      cl.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{cat=b.dataset.c;renderAll();});
+    }
+    function renderGrid(){
+      const list=filterBy(track,cat);
+      const t=track==="all"?null:byId[track];
+      document.getElementById("resTitle").textContent = (t?t.name:"All projects")+(cat==="all"?"":` · ${cat}`);
+      document.getElementById("resCount").textContent = `${list.length} project${list.length===1?"":"s"}`;
+      if(!list.length){grid.innerHTML='<div class="empty">No projects match this filter.</div>';return;}
+      grid.innerHTML=list.map(p=>{const tt=byId[p.track];
+        return `<article class="card" data-id="${p.id}">
+          <div class="cover">${coverHTML(p)}<span class="tag"><span class="swatch" style="background:${tt.color}"></span>${tt.short}</span></div>
+          <div class="c-body"><div class="c-name">${p.name}</div>${p.team?`<div class="c-team">${p.team}</div>`:""}
+          <div class="c-meta"><span class="c-cat">${p.category}</span><span class="c-links">${linkIcons(p)}</span></div></div>
+        </article>`;}).join("");
+      grid.querySelectorAll(".card").forEach(c=>c.onclick=()=>openModal(c.dataset.id));
+    }
+    function renderAll(){renderTrackList();renderCatList();renderGrid();}
+    document.getElementById("reset").onclick=()=>{track="all";cat="all";renderAll();};
+
+    const scrim=document.getElementById("scrim"), modalEl=document.getElementById("modal");
+    function openModal(id){
+      const p=D.projects.find(x=>x.id===id); if(!p)return; const t=byId[p.track];
+      modalEl.innerHTML=`
+        <div class="m-cover">${coverHTML(p)}<button class="m-close" aria-label="Close">✕</button></div>
+        <div class="m-body">
+          <span class="m-tag" style="background:${t.color}22;color:${t.color}"><span style="width:7px;height:7px;border-radius:2px;background:${t.color}"></span>${t.name}</span>
+          <h2 class="m-name">${p.name}</h2><div class="m-sub">${p.team?`by ${p.team}`:""}${p.company&&p.company!==p.team?` · ${p.company}`:""}</div>
+          <a class="m-perma" href="./projects/${p.id}.html">Open full project page ↗</a>
+          <div class="m-grid">${detailMeta(p)}</div>
+          <p class="m-desc">${p.description}</p>
+          <div class="m-links">${linkButtons(p)}</div>
+        </div>`;
+      modalEl.querySelector(".m-close").onclick=closeModal;
+      scrim.classList.add("show"); document.body.style.overflow="hidden";
+    }
+    function closeModal(){scrim.classList.remove("show");document.body.style.overflow="";}
+    scrim.onclick=e=>{if(e.target===scrim)closeModal();};
+    document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
+
+    // render once projects.json has loaded; never hang if the loader is missing or stale
+    function boot(){ renderAll(); }
+    if (window.HACKATHON_READY && typeof window.HACKATHON_READY.then === "function") {
+      window.HACKATHON_READY.then(boot).catch(boot);
+    } else {
+      boot();
+    }
+  })();
+  </script>
+</body>
+</html>
