@@ -4,7 +4,7 @@ A filterable gallery of the QVAC Hackathon (Beta Edition) project submissions. I
 
 ## What is inside
 
-- Filter by **track** (General Purpose, Mobile, Psy Models, Tinkerer) and by **category** (Healthcare, Legal, Privacy/Security, Web3, Emergency, and more), with live counts.
+- Filter by **track** (General Purpose, Mobile, Psy Models, Tinkerer) and by **category** (Healthcare, Legal, Privacy/Security, Web3, Emergency, and more), with live counts, plus a **Has demo video** filter for the projects that include a demo.
 - A detail **modal** for each project, plus a standalone **page per project** at `projects/<slug>.html` with its own title, description, and Open Graph tags, so any single project can be shared and indexed.
 - A **cover image** per project.
 

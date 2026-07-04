@@ -23,7 +23,7 @@ window.HACKATHON = {
     title: "QVAC Hackathon",
     edition: "Beta Edition",
     voteOpen: true,
-    voteUrl: "https://forms.gle/REPLACE_WITH_VOTE_FORM",   // <- set the real vote form here
+    voteUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfZEmfyO7PniazH4uxhiYKv-nGCWefLR6wXQea0fhZ56B3UaQ/viewform",
     voteDeadline: "July 4, 2026, 23:59 UTC",
 
     // Category order for the sub-filter. Categories present in the data render
@@ -90,6 +90,7 @@ window.HACKATHON = {
         category: r.category || "Other",
         description: r.description || "",
         links,
+        hasDemo: !!r.demo_video,               // for the "has demo video" filter + card cue
         image: "./covers/" + id + ".jpg",     // AI cover; falls back to procedural on 404 (see coverHTML)
         image_prompt: r.image_prompt || null, // the generation prompt, kept for re-rolls
       };

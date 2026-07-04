@@ -101,11 +101,14 @@ def page(p):
         + field("Track", f'<span style="color:{t["color"]}">{e(t["name"])}</span>')
     )
     # real AI cover if present, else the deterministic procedural cover
+    has_demo = "Video" in p["links"]
+    badge = ('<span class="vbadge"><svg viewBox="0 0 24 24" fill="currentColor">'
+             '<path d="M8 5v14l11-7z"/></svg>Demo</span>') if has_demo else ""
     if (HERE / "covers" / f'{p["id"]}.jpg').exists():
-        cover_block = f'<div class="cover"><img src="../covers/{p["id"]}.jpg" alt="{ea(p["name"])} cover" loading="lazy"></div>'
+        cover_block = f'<div class="cover"><img src="../covers/{p["id"]}.jpg" alt="{ea(p["name"])} cover" loading="lazy">{badge}</div>'
         cover_script = ""
     else:
-        cover_block = '<div class="cover" id="cover"></div>'
+        cover_block = f'<div class="cover" id="cover">{badge}</div>'
         cover_script = ('<script src="../cover.js?v=2"></script>\n'
                         '  <script>document.getElementById("cover").innerHTML = '
                         f'window.qvacCover({{ id: {js_str(p["id"])}, name: {js_str(p["name"])} }}, "{t["color"]}");</script>')
@@ -140,7 +143,9 @@ def page(p):
   .brand .ed{{font-size:13px;color:var(--muted)}} .brand .ed b{{color:var(--text);font-weight:600}}
   .back{{font-size:13px;font-weight:600;color:var(--muted)}} .back:hover{{color:var(--accent)}}
   main{{padding:26px 0 80px}}
-  .cover{{aspect-ratio:16/7;border-radius:var(--r-card);overflow:hidden;border:1px solid var(--line2);background:#1b1f1c}}
+  .cover{{position:relative;aspect-ratio:16/7;border-radius:var(--r-card);overflow:hidden;border:1px solid var(--line2);background:#1b1f1c}}
+  .cover .vbadge{{position:absolute;top:12px;right:12px;display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 10px;border-radius:999px;font-size:11px;font-weight:700;background:rgba(22,227,193,.92);color:var(--ink)}}
+  .cover .vbadge svg{{width:11px;height:11px}}
   .cover svg{{width:100%;height:100%;object-fit:cover}}
   .tag{{display:inline-flex;align-items:center;gap:7px;height:26px;padding:0 11px;border-radius:var(--r-pill);font-size:12px;font-weight:700;margin:22px 0 0;background:{t["color"]}22;color:{t["color"]}}}
   .tag .sw{{width:7px;height:7px;border-radius:2px;background:{t["color"]}}}

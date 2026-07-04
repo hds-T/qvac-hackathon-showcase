@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QvacMCP / AI agent-MCP-client · QVAC Hackathon</title>
+<meta name="description" content="A command-line MCP server that lets AI agents drive small local models step by step through clear instructions — fully on-device agent tooling.">
+<link rel="canonical" href="https://jazzy-anvil-4vex.here.now/projects/qvacmcp-ai-agent-mcp-client.html">
+<link rel="icon" type="image/svg+xml" href="../assets/qvac-mark.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="QVAC Hackathon">
+<meta property="og:title" content="QvacMCP / AI agent-MCP-client · QVAC Hackathon">
+<meta property="og:description" content="A command-line MCP server that lets AI agents drive small local models step by step through clear instructions — fully on-device agent tooling.">
+<meta property="og:url" content="https://jazzy-anvil-4vex.here.now/projects/qvacmcp-ai-agent-mcp-client.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="QvacMCP / AI agent-MCP-client · QVAC Hackathon">
+<meta name="twitter:description" content="A command-line MCP server that lets AI agents drive small local models step by step through clear instructions — fully on-device agent tooling.">
+<style>
+  @font-face{font-family:"Geist";src:url("../assets/Geist.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+  :root{--bg:#161718;--bg2:#171817;--card:#1e1f20;--card2:#252728;--accent:#16e3c1;--ink:#0f1010;--text:#ECF1EE;--muted:#8ca59e;--muted2:#7c7d7e;--line:rgba(48,80,72,.45);--line2:rgba(255,255,255,.06);--r-card:14px;--r-btn:9px;--r-pill:999px}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Geist",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);-webkit-font-smoothing:antialiased;min-height:100vh;
+    background:radial-gradient(900px 460px at 80% -6%,rgba(22,227,193,.07),transparent 60%),linear-gradient(180deg,var(--bg2),var(--bg) 46%)}
+  a{color:inherit;text-decoration:none} svg{display:block}
+  .wrap{max-width:860px;margin:0 auto;padding:0 24px}
+  header.top{position:sticky;top:0;z-index:40;backdrop-filter:blur(12px);background:linear-gradient(180deg,rgba(22,24,23,.86),rgba(22,24,23,.62));border-bottom:1px solid var(--line2)}
+  .top-in{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:860px;margin:0 auto;padding:0 24px}
+  .brand{display:flex;align-items:center;gap:12px} .brand .mark{height:22px} .brand .sep{width:1px;height:20px;background:var(--line)}
+  .brand .ed{font-size:13px;color:var(--muted)} .brand .ed b{color:var(--text);font-weight:600}
+  .back{font-size:13px;font-weight:600;color:var(--muted)} .back:hover{color:var(--accent)}
+  main{padding:26px 0 80px}
+  .cover{position:relative;aspect-ratio:16/7;border-radius:var(--r-card);overflow:hidden;border:1px solid var(--line2);background:#1b1f1c}
+  .cover .vbadge{position:absolute;top:12px;right:12px;display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 10px;border-radius:999px;font-size:11px;font-weight:700;background:rgba(22,227,193,.92);color:var(--ink)}
+  .cover .vbadge svg{width:11px;height:11px}
+  .cover svg{width:100%;height:100%;object-fit:cover}
+  .tag{display:inline-flex;align-items:center;gap:7px;height:26px;padding:0 11px;border-radius:var(--r-pill);font-size:12px;font-weight:700;margin:22px 0 0;background:#16E3C122;color:#16E3C1}
+  .tag .sw{width:7px;height:7px;border-radius:2px;background:#16E3C1}
+  h1{font-size:34px;font-weight:700;letter-spacing:-.02em;margin:12px 0 4px}
+  .sub{color:var(--muted);font-size:14px;min-height:1px}
+  .m-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}
+  .m-field{background:var(--bg);border:1px solid var(--line2);border-radius:10px;padding:11px 13px}
+  .m-field .k{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted2)}
+  .m-field .v{font-size:14px;font-weight:600;margin-top:3px}
+  .desc{font-size:16px;line-height:1.7;color:#cdd6d1;margin-top:6px;white-space:pre-line}
+  .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+  .lk{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 15px;border-radius:var(--r-btn);background:var(--card2);border:1px solid var(--line2);font-size:13px;font-weight:600;transition:.12s}
+  .lk:hover{border-color:rgba(22,227,193,.45);color:var(--accent)} .lk svg{width:12px;height:12px}
+  .lk.primary{background:var(--accent);color:var(--ink);border-color:transparent} .lk.primary:hover{color:var(--ink);background:#2bf0d0}
+  .no-links{color:var(--muted2);font-size:14px}
+  .foot{margin-top:40px;padding-top:22px;border-top:1px solid var(--line2)}
+  .foot a{font-size:14px;font-weight:600;color:var(--accent)}
+  @media(max-width:640px){h1{font-size:27px}.m-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+  <header class="top"><div class="top-in">
+    <a class="brand" href="../index.html" aria-label="QVAC Hackathon home"><img class="mark" src="../assets/qvac-wordmark.svg" alt="QVAC"><span class="sep"></span><span class="ed">Hackathon <b>Beta Edition</b></span></a>
+    <a class="back" href="../index.html">&larr; All projects</a>
+  </div></header>
+
+  <div class="wrap"><main>
+    <div class="cover"><img src="../covers/qvacmcp-ai-agent-mcp-client.jpg" alt="QvacMCP / AI agent-MCP-client cover" loading="lazy"></div>
+    <span class="tag"><span class="sw"></span>General Purpose</span>
+    <h1>QvacMCP / AI agent-MCP-client</h1>
+    <div class="sub"></div>
+    <div class="m-grid"><div class="m-field"><div class="k">Category</div><div class="v">DevTools</div></div><div class="m-field"><div class="k">Track</div><div class="v"><span style="color:#16E3C1">General Purpose</span></div></div></div>
+    <p class="desc">A command-line MCP server that lets AI agents drive small local models step by step through clear instructions — fully on-device agent tooling.</p>
+    <div class="links"><a class="lk primary" href="https://github.com/PupusasGame/qvac-mcp" target="_blank" rel="noopener">GitHub <svg viewBox="0 0 14 14" width="12" fill="none"><path d="M2 7h9M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg></a></div>
+    <div class="foot"><a href="../index.html">&larr; Back to all projects</a></div>
+  </main></div>
+
+  
+</body>
+</html>
