@@ -90,7 +90,8 @@ window.HACKATHON = {
         category: r.category || "Other",
         description: r.description || "",
         links,
-        hasDemo: !!r.demo_video,               // for the "has demo video" filter + card cue
+        hasDemo: !!r.demo_video,               // demo_video -> "Video" pill + "has demo video" filter
+        hasLiveDemo: !!r.live_demo,            // live_demo -> "Demo" pill
         image: "./covers/" + id + ".jpg",     // AI cover; falls back to procedural on 404 (see coverHTML)
         image_prompt: r.image_prompt || null, // the generation prompt, kept for re-rolls
       };

@@ -101,9 +101,16 @@ def page(p):
         + field("Track", f'<span style="color:{t["color"]}">{e(t["name"])}</span>')
     )
     # real AI cover if present, else the deterministic procedural cover
-    has_demo = "Video" in p["links"]
-    badge = ('<span class="vbadge"><svg viewBox="0 0 24 24" fill="currentColor">'
-             '<path d="M8 5v14l11-7z"/></svg>Demo</span>') if has_demo else ""
+    has_video = "Video" in p["links"]
+    has_live_demo = "Live demo" in p["links"]
+    demo_pill = ('<span class="vbadge demo"><svg viewBox="0 0 24 24" fill="none" '
+                 'stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+                 '<path d="M14 3h7v7M21 3l-9 9M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/>'
+                 '</svg>Demo</span>') if has_live_demo else ""
+    video_pill = ('<span class="vbadge"><svg viewBox="0 0 24 24" fill="currentColor">'
+                  '<path d="M8 5v14l11-7z"/></svg>Video</span>') if has_video else ""
+    badge = (f'<span class="badges">{demo_pill}{video_pill}</span>'
+             if (has_live_demo or has_video) else "")
     if (HERE / "covers" / f'{p["id"]}.jpg').exists():
         cover_block = f'<div class="cover"><img src="../covers/{p["id"]}.jpg" alt="{ea(p["name"])} cover" loading="lazy">{badge}</div>'
         cover_script = ""
@@ -144,7 +151,9 @@ def page(p):
   .back{{font-size:13px;font-weight:600;color:var(--muted)}} .back:hover{{color:var(--accent)}}
   main{{padding:26px 0 80px}}
   .cover{{position:relative;aspect-ratio:16/7;border-radius:var(--r-card);overflow:hidden;border:1px solid var(--line2);background:#1b1f1c}}
-  .cover .vbadge{{position:absolute;top:12px;right:12px;display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 10px;border-radius:999px;font-size:11px;font-weight:700;background:rgba(22,227,193,.92);color:var(--ink)}}
+  .cover .badges{{position:absolute;top:12px;right:12px;display:flex;gap:6px}}
+  .cover .vbadge{{display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 10px;border-radius:999px;font-size:11px;font-weight:700;background:rgba(22,227,193,.92);color:var(--ink)}}
+  .cover .vbadge.demo{{background:rgba(15,16,16,.7);color:var(--text);border:1px solid var(--line2);backdrop-filter:blur(4px)}}
   .cover .vbadge svg{{width:11px;height:11px}}
   .cover svg{{width:100%;height:100%;object-fit:cover}}
   .tag{{display:inline-flex;align-items:center;gap:7px;height:26px;padding:0 11px;border-radius:var(--r-pill);font-size:12px;font-weight:700;margin:22px 0 0;background:{t["color"]}22;color:{t["color"]}}}

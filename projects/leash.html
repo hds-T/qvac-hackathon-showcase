@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leash · QVAC Hackathon</title>
-<meta name="description" content="Leash is a general-purpose, local-first agent harness — like Codex or Claude Code, but running entirely on-device via QVAC, with an encrypted P2P mesh, delegated inference and a delegation economy.">
+<meta name="description" content="Leash is a general-purpose, local-first agent harness — like Codex or Claude Code, but running entirely on-device via QVAC. Swappable models, skills, plugins...">
 <link rel="canonical" href="https://jazzy-anvil-4vex.here.now/projects/leash.html">
 <link rel="icon" type="image/svg+xml" href="../assets/qvac-mark.svg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="QVAC Hackathon">
 <meta property="og:title" content="Leash · QVAC Hackathon">
-<meta property="og:description" content="Leash is a general-purpose, local-first agent harness — like Codex or Claude Code, but running entirely on-device via QVAC, with an encrypted P2P mesh, delegated inference and a delegation economy.">
+<meta property="og:description" content="Leash is a general-purpose, local-first agent harness — like Codex or Claude Code, but running entirely on-device via QVAC. Swappable models, skills, plugins...">
 <meta property="og:url" content="https://jazzy-anvil-4vex.here.now/projects/leash.html">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Leash · QVAC Hackathon">
-<meta name="twitter:description" content="Leash is a general-purpose, local-first agent harness — like Codex or Claude Code, but running entirely on-device via QVAC, with an encrypted P2P mesh, delegated inference and a delegation economy.">
+<meta name="twitter:description" content="Leash is a general-purpose, local-first agent harness — like Codex or Claude Code, but running entirely on-device via QVAC. Swappable models, skills, plugins...">
 <style>
   @font-face{font-family:"Geist";src:url("../assets/Geist.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
   :root{--bg:#161718;--bg2:#171817;--card:#1e1f20;--card2:#252728;--accent:#16e3c1;--ink:#0f1010;--text:#ECF1EE;--muted:#8ca59e;--muted2:#7c7d7e;--line:rgba(48,80,72,.45);--line2:rgba(255,255,255,.06);--r-card:14px;--r-btn:9px;--r-pill:999px}
@@ -30,7 +30,9 @@
   .back{font-size:13px;font-weight:600;color:var(--muted)} .back:hover{color:var(--accent)}
   main{padding:26px 0 80px}
   .cover{position:relative;aspect-ratio:16/7;border-radius:var(--r-card);overflow:hidden;border:1px solid var(--line2);background:#1b1f1c}
-  .cover .vbadge{position:absolute;top:12px;right:12px;display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 10px;border-radius:999px;font-size:11px;font-weight:700;background:rgba(22,227,193,.92);color:var(--ink)}
+  .cover .badges{position:absolute;top:12px;right:12px;display:flex;gap:6px}
+  .cover .vbadge{display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 10px;border-radius:999px;font-size:11px;font-weight:700;background:rgba(22,227,193,.92);color:var(--ink)}
+  .cover .vbadge.demo{background:rgba(15,16,16,.7);color:var(--text);border:1px solid var(--line2);backdrop-filter:blur(4px)}
   .cover .vbadge svg{width:11px;height:11px}
   .cover svg{width:100%;height:100%;object-fit:cover}
   .tag{display:inline-flex;align-items:center;gap:7px;height:26px;padding:0 11px;border-radius:var(--r-pill);font-size:12px;font-weight:700;margin:22px 0 0;background:#16E3C122;color:#16E3C1}
@@ -59,11 +61,11 @@
   </div></header>
 
   <div class="wrap"><main>
-    <div class="cover"><img src="../covers/leash.jpg" alt="Leash cover" loading="lazy"><span class="vbadge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Demo</span></div>
+    <div class="cover"><img src="../covers/leash.jpg" alt="Leash cover" loading="lazy"><span class="badges"><span class="vbadge demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7M21 3l-9 9M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg>Demo</span><span class="vbadge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Video</span></span></div>
     <span class="tag"><span class="sw"></span>General Purpose</span>
     <h1>Leash</h1>
-    <div class="sub"></div>
-    <div class="m-grid"><div class="m-field"><div class="k">Category</div><div class="v">Agent Platform</div></div><div class="m-field"><div class="k">Track</div><div class="v"><span style="color:#16E3C1">General Purpose</span></div></div></div>
+    <div class="sub">by teamMycelium</div>
+    <div class="m-grid"><div class="m-field"><div class="k">Team</div><div class="v">teamMycelium</div></div><div class="m-field"><div class="k">Category</div><div class="v">Agent Platform</div></div><div class="m-field"><div class="k">Track</div><div class="v"><span style="color:#16E3C1">General Purpose</span></div></div></div>
     <p class="desc">Leash is a general-purpose, local-first agent harness — like Codex or Claude Code, but running entirely on-device via QVAC. Swappable models, skills, plugins and MCP tools let it become an auditor, coding assistant, health companion, tax accountant or learning assistant. Built on the Mycelium engine, it adds an encrypted P2P mesh with delegated inference, a CRDT context graph, and a delegation economy — no cloud AI dependency.</p>
     <div class="links"><a class="lk primary" href="https://github.com/danielAsaboro/Leash" target="_blank" rel="noopener">GitHub <svg viewBox="0 0 14 14" width="12" fill="none"><path d="M2 7h9M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg></a><a class="lk" href="https://www.youtube.com/playlist?list=PLeERy8YL4mpQwT3OwpzOqjp23FlrLQ_1Y" target="_blank" rel="noopener">Video <svg viewBox="0 0 14 14" width="12" fill="none"><path d="M2 7h9M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg></a><a class="lk" href="https://www.useleash.xyz/" target="_blank" rel="noopener">Live demo <svg viewBox="0 0 14 14" width="12" fill="none"><path d="M2 7h9M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg></a></div>
     <div class="foot"><a href="../index.html">&larr; Back to all projects</a></div>

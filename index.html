@@ -64,11 +64,15 @@
   .card:hover{transform:translateY(-3px);border-color:rgba(22,227,193,.4)}
   .card.has-demo{border-color:rgba(22,227,193,.5)}
   .card.has-demo:hover{border-color:rgba(22,227,193,.8)}
+  .card.has-both{border-color:rgba(196,138,46,.6)}
+  .card.has-both:hover{border-color:rgba(196,138,46,.95)}
   .cover{aspect-ratio:5/3;position:relative;background:#1b1f1c;overflow:hidden}
   .cover img{width:100%;height:100%;object-fit:cover}
   .cover .tag{position:absolute;top:10px;left:10px;display:inline-flex;align-items:center;gap:6px;height:23px;padding:0 9px;border-radius:var(--r-pill);font-size:11px;font-weight:700;background:rgba(15,16,16,.7);backdrop-filter:blur(4px);border:1px solid var(--line2)}
   .cover .tag .swatch{width:7px;height:7px;border-radius:2px}
-  .cover .vbadge{position:absolute;top:10px;right:10px;display:inline-flex;align-items:center;gap:5px;height:23px;padding:0 9px;border-radius:var(--r-pill);font-size:10.5px;font-weight:700;letter-spacing:.02em;background:rgba(22,227,193,.92);color:var(--ink)}
+  .cover .badges{position:absolute;top:10px;right:10px;display:flex;gap:6px}
+  .cover .vbadge{display:inline-flex;align-items:center;gap:5px;height:23px;padding:0 9px;border-radius:var(--r-pill);font-size:10.5px;font-weight:700;letter-spacing:.02em;background:rgba(22,227,193,.92);color:var(--ink)}
+  .cover .vbadge.demo{background:rgba(15,16,16,.7);color:var(--text);border:1px solid var(--line2);backdrop-filter:blur(4px)}
   .cover .vbadge svg{width:10px;height:10px}
   .c-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:6px;flex:1}
   .c-name{font-size:16px;font-weight:600;letter-spacing:-.01em}
@@ -152,6 +156,7 @@
     const {D,byId,coverHTML,linkIcons,linkButtons,categoriesIn,detailMeta}=QH;
     const TRACKS=D.tracks; let track="all", cat="all", demo="all", q="";
     const PLAY='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+    const LINK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7M21 3l-9 9M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg>';
     const searching=()=>q.trim()!=="";
 
     document.getElementById("edition").textContent=D.meta.edition;
@@ -164,14 +169,20 @@
           searchInput=document.getElementById("searchInput"), searchClear=document.getElementById("searchClear"),
           filterGroups=document.getElementById("filterGroups");
 
-    // the "Has demo video" toggle is the top-level filter; track + category scope within it
-    function base(){ return demo==="yes" ? D.projects.filter(p=>p.hasDemo) : D.projects; }
+    // the demo toggle is the top-level filter; track + category scope within it
+    function base(){
+      if(demo==="yes")  return D.projects.filter(p=>p.hasDemo);
+      if(demo==="live") return D.projects.filter(p=>p.hasLiveDemo);
+      return D.projects;
+    }
 
     function renderDemoList(){
       const withDemo=D.projects.filter(p=>p.hasDemo).length;
+      const withLive=D.projects.filter(p=>p.hasLiveDemo).length;
       dl.innerHTML=
         `<button class="opt demo ${demo==="all"?'on':''}" data-d="all"><span class="nm">All projects</span><span class="ct">${D.projects.length}</span></button>`+
-        `<button class="opt demo ${demo==="yes"?'on':''}" data-d="yes"><span class="pin">${PLAY}</span><span class="nm">Has demo video</span><span class="ct">${withDemo}</span></button>`;
+        `<button class="opt demo ${demo==="yes"?'on':''}" data-d="yes"><span class="pin">${PLAY}</span><span class="nm">Has demo video</span><span class="ct">${withDemo}</span></button>`+
+        `<button class="opt demo ${demo==="live"?'on':''}" data-d="live"><span class="pin">${LINK}</span><span class="nm">Has live demo</span><span class="ct">${withLive}</span></button>`;
       dl.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{demo=b.dataset.d;renderAll();});
     }
     function renderTrackList(){
@@ -199,12 +210,13 @@
       const t=track==="all"?null:byId[track];
       document.getElementById("resTitle").textContent = searching()
         ? `Search by "${q.trim()}"`
-        : (t?t.name:"All projects")+(cat==="all"?"":` · ${cat}`)+(demo==="yes"?" · with demo":"");
+        : (t?t.name:"All projects")+(cat==="all"?"":` · ${cat}`)+(demo==="yes"?" · with video":demo==="live"?" · with live demo":"");
       document.getElementById("resCount").textContent = `${list.length} project${list.length===1?"":"s"}`;
       if(!list.length){grid.innerHTML=`<div class="empty">${searching()?"Nothing to show":"No projects match this filter."}</div>`;return;}
       grid.innerHTML=list.map(p=>{const tt=byId[p.track];
-        return `<article class="card ${p.hasDemo?'has-demo':''}" data-id="${p.id}">
-          <div class="cover">${coverHTML(p)}<span class="tag"><span class="swatch" style="background:${tt.color}"></span>${tt.short}</span>${p.hasDemo?`<span class="vbadge">${PLAY}Demo</span>`:""}</div>
+        const border=p.hasDemo&&p.hasLiveDemo?'has-both':p.hasDemo?'has-demo':'';
+        return `<article class="card ${border}" data-id="${p.id}">
+          <div class="cover">${coverHTML(p)}<span class="tag"><span class="swatch" style="background:${tt.color}"></span>${tt.short}</span>${(p.hasLiveDemo||p.hasDemo)?`<span class="badges">${p.hasLiveDemo?`<span class="vbadge demo">${LINK}Demo</span>`:""}${p.hasDemo?`<span class="vbadge">${PLAY}Video</span>`:""}</span>`:""}</div>
           <div class="c-body"><div class="c-name">${p.name}</div>${p.team?`<div class="c-team">${p.team}</div>`:""}
           <div class="c-meta"><span class="c-cat">${p.category}</span><span class="c-links">${linkIcons(p)}</span></div></div>
         </article>`;}).join("");
