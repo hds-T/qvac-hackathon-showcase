@@ -380,7 +380,7 @@
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: CaseRoom — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/alperimo/caseroom",
-    "demo_video": null,
+    "demo_video": "https://www.youtube.com/watch?v=V5WPJ37wYOc",
     "live_demo": null,
     "category": "Healthcare"
   },
@@ -398,13 +398,13 @@
   {
     "project_name": "Coldwire",
     "team_name": null,
-    "description": "Your watchlist, open positions and strategy never leave your machine.",
-    "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Coldwire — Legal. deep navy and gold, scales of justice merged with document pages and lock icons, professional corporate mood. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
+    "description": "Coldwire is a private trading-signal agent that reads your watchlist, open positions and strategy locally, then returns a structured signal report reasoned by an on-device LLM with RAG. Your positions never leave the device — zero cloud, $0 inference, runs in airplane mode on your own hardware.",
+    "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Coldwire — Finance. deep charcoal and electric green, abstract candlestick and market-chart glow over a padlocked device silhouette, private trading-terminal mood. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/tang-vu/coldwire",
     "demo_video": "https://www.youtube.com/watch?v=BbDnA8-KgZE",
     "live_demo": "https://coldwire-edge-ai.vercel.app",
-    "category": "Legal"
+    "category": "Finance"
   },
   {
     "project_name": "Conduit",
