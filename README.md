@@ -39,3 +39,8 @@ python3 build_pages.py
 ## Deploy
 
 Any static host works (GitHub Pages, Netlify, Cloudflare Pages, and so on). All paths are relative.
+
+This is a plain static site, not a Jekyll site, so it does **not** use a Jekyll theme. The `.nojekyll`
+file at the root tells GitHub Pages to serve the files verbatim (skipping Jekyll), which avoids Jekyll
+ignoring any underscore-prefixed files or processing `{{ }}`-style syntax. Just publish the `website/`
+folder (e.g. GitHub Pages from the branch root) and it works as-is.
