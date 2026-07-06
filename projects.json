@@ -551,14 +551,14 @@
   },
   {
     "project_name": "Leash",
-    "team_name": null,
-    "description": "Leash is a learning ai solution in education, running entirely on-device via QVAC with no cloud AI dependency.",
-    "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Leash — Education. warm orange and soft purple, open book with floating knowledge particles, friendly learning atmosphere. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
+    "team_name": "teamMycelium",
+    "description": "Leash is a general-purpose, local-first agent harness — like Codex or Claude Code, but running entirely on-device via QVAC. Swappable models, skills, plugins and MCP tools let it become an auditor, coding assistant, health companion, tax accountant or learning assistant. Built on the Mycelium engine, it adds an encrypted P2P mesh with delegated inference, a CRDT context graph, and a delegation economy — no cloud AI dependency.",
+    "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Leash — Agent Platform. teal and deep charcoal, interconnected mycelium mesh network spanning multiple devices, glowing nodes and delegation links, modular agent-harness aesthetic. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/danielAsaboro/Leash",
-    "demo_video": null,
+    "demo_video": "https://www.youtube.com/playlist?list=PLeERy8YL4mpQwT3OwpzOqjp23FlrLQ_1Y",
     "live_demo": "https://www.useleash.xyz/",
-    "category": "Education"
+    "category": "Agent Platform"
   },
   {
     "project_name": "LocalVault AI",
