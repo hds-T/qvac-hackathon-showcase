@@ -787,7 +787,7 @@
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Daemon — Privacy/Security. shield silhouette with encrypted data streams, matte black and electric blue, zero-trust aesthetic. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/pharoxe/daemon-hive-swarm",
-    "demo_video": null,
+    "demo_video": "https://www.loom.com/share/fa60c97639b844029f0d762130d91da3",
     "live_demo": "https://daemon-agent-blond.vercel.app/",
     "category": "Privacy/Security"
   },
