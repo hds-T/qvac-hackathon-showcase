@@ -192,7 +192,7 @@
     "description": "Collective immunity for Solana wallets — on-device AI detects unlimited-approval drainers and propagates signed warnings across a local mesh.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: 🛡️ DIM Protocol — Web3. purple and cyan decentralized mesh nodes, blockchain lattice, peer-to-peer connection lines on dark background. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
-    "github": "https://github.com/ilichb/QVAC/tree/main",
+    "github": "https://github.com/ilichb/QVAC",
     "demo_video": "https://youtu.be/9YcBIYLc2zQ",
     "live_demo": null,
     "category": "Web3"
@@ -489,7 +489,7 @@
     "description": "The WDK wallet extension is a separate companion project (its own repo).",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Fibiom — Finance. dark green and teal trading charts, secure vault imagery, futuristic fintech glow. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
-    "github": "https://github.com/fibiom-org",
+    "github": "https://github.com/fibiom-org/fibiom-electron",
     "demo_video": null,
     "live_demo": null,
     "category": "Finance"
@@ -698,7 +698,7 @@
     "description": "Solace Mesh is a crypto & blockchain solution in web3, running entirely on-device via QVAC with no cloud AI dependency.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Solace Mesh — Web3. purple and cyan decentralized mesh nodes, blockchain lattice, peer-to-peer connection lines on dark background. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
-    "github": "https://github.com/mamoor123",
+    "github": "https://github.com/mamoor123/solace-mesh",
     "demo_video": null,
     "live_demo": null,
     "category": "Web3"
