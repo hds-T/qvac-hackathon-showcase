@@ -2,7 +2,7 @@
   {
     "project_name": "Stash.ai",
     "team_name": null,
-    "description": "You already have a place where you dump things — a Discord channel with one member, Telegram \"Saved Messages\", a notes file called stuff.txt. The problem is never saving. It's finding.",
+    "description": "A self-hosted \"save anything\" inbox with a local brain: every link, screenshot, snippet and thought is auto-classified, summarized, tagged, and made semantically searchable — with an Ask mode that answers from your own saved items, 100% on-device.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Stash.ai — Productivity. clean white and slate blue, organized workspace abstract, efficient minimal productivity mood. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/savewithstash/stash",
@@ -36,12 +36,12 @@
     "project_name": "stash",
     "team_name": null,
     "description": "A private Android app to save, organize, and find links, notes, and shared text — with on-device AI sorting that never uploads your data.",
-    "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: stash — Privacy/Security. shield silhouette with encrypted data streams, matte black and electric blue, zero-trust aesthetic. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
+    "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: stash — Productivity. clean white and slate blue, organized workspace abstract, efficient minimal productivity mood. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/fozagtx/stash",
     "demo_video": "https://drive.google.com/file/d/12-rPSsLsGyuLh8P0P2Q3_pJtIAeIcCAH",
     "live_demo": null,
-    "category": "Privacy/Security"
+    "category": "Productivity"
   },
   {
     "project_name": "Beacon",
