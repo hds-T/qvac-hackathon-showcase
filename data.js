@@ -24,7 +24,7 @@ window.HACKATHON = {
     edition: "Beta Edition",
     voteOpen: true,
     voteUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfZEmfyO7PniazH4uxhiYKv-nGCWefLR6wXQea0fhZ56B3UaQ/viewform",
-    voteDeadline: "July 4, 2026, 23:59 UTC",
+    voteDeadline: "July 12, 2026, 23:59 UTC",
 
     // Category order for the sub-filter. Categories present in the data render
     // in this order; anything new falls in at the end automatically.
