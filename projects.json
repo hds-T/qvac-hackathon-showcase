@@ -490,7 +490,7 @@
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Fibiom — Finance. dark green and teal trading charts, secure vault imagery, futuristic fintech glow. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/fibiom-org/fibiom-electron",
-    "demo_video": null,
+    "demo_video": "https://www.youtube.com/watch?v=4ocfp8MMLGU",
     "live_demo": null,
     "category": "Finance"
   },
