@@ -49,6 +49,10 @@
   .opt.demo .pin{width:9px;height:9px;flex:0 0 auto;color:var(--accent)}
   .side .reset{margin-left:6px;font-size:12px;color:var(--muted);background:none;border:none;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
   .side .reset:hover{color:var(--accent)}
+  .side #filterGroups{display:flex;flex-direction:column;gap:22px}
+  .side .searchbox{width:100%;height:38px;padding:0 12px;margin:0 0 8px;border:1px solid var(--line2);border-radius:10px;background:var(--card);color:var(--text);font-family:inherit;font-size:13.5px}
+  .side .searchbox::placeholder{color:var(--muted2)}
+  .side .searchbox:focus{outline:none;border-color:rgba(22,227,193,.45)}
 
   /* results */
   .main{min-width:0}
@@ -119,10 +123,17 @@
 
     <div class="shell">
       <aside class="side">
-        <div class="grp"><div class="gh">Show</div><div id="demoList"></div></div>
-        <div class="grp"><div class="gh">Track</div><div id="trackList"></div></div>
-        <div class="grp"><div class="gh">Category</div><div id="catList"></div></div>
-        <button class="reset" id="reset">Reset filters</button>
+        <div class="grp" id="searchGrp">
+          <div class="gh">Search</div>
+          <input id="searchInput" class="searchbox" type="text" placeholder="Project name…" autocomplete="off" spellcheck="false">
+          <button class="reset" id="searchClear" hidden>Clear</button>
+        </div>
+        <div id="filterGroups">
+          <div class="grp"><div class="gh">Show</div><div id="demoList"></div></div>
+          <div class="grp"><div class="gh">Track</div><div id="trackList"></div></div>
+          <div class="grp"><div class="gh">Category</div><div id="catList"></div></div>
+          <button class="reset" id="reset">Reset filters</button>
+        </div>
       </aside>
       <main class="main">
         <div class="resbar"><h2 id="resTitle">All projects</h2><span class="cnt" id="resCount"></span></div>
@@ -139,8 +150,9 @@
   <script>
   (function(){
     const {D,byId,coverHTML,linkIcons,linkButtons,categoriesIn,detailMeta}=QH;
-    const TRACKS=D.tracks; let track="all", cat="all", demo="all";
+    const TRACKS=D.tracks; let track="all", cat="all", demo="all", q="";
     const PLAY='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+    const searching=()=>q.trim()!=="";
 
     document.getElementById("edition").textContent=D.meta.edition;
     document.getElementById("voteBtn").href=D.meta.voteUrl;
@@ -148,7 +160,9 @@
     if(!D.meta.voteOpen) document.getElementById("voteBanner").hidden=true;
 
     const tl=document.getElementById("trackList"), cl=document.getElementById("catList"),
-          dl=document.getElementById("demoList"), grid=document.getElementById("grid");
+          dl=document.getElementById("demoList"), grid=document.getElementById("grid"),
+          searchInput=document.getElementById("searchInput"), searchClear=document.getElementById("searchClear"),
+          filterGroups=document.getElementById("filterGroups");
 
     // the "Has demo video" toggle is the top-level filter; track + category scope within it
     function base(){ return demo==="yes" ? D.projects.filter(p=>p.hasDemo) : D.projects; }
@@ -178,11 +192,16 @@
       cl.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{cat=b.dataset.c;renderAll();});
     }
     function renderGrid(){
-      const list=base().filter(p=>(track==="all"||p.track===track)&&(cat==="all"||p.category===cat));
+      const needle=q.trim().toLowerCase();
+      const list=searching()
+        ? D.projects.filter(p=>p.name.toLowerCase().includes(needle))
+        : base().filter(p=>(track==="all"||p.track===track)&&(cat==="all"||p.category===cat));
       const t=track==="all"?null:byId[track];
-      document.getElementById("resTitle").textContent = (t?t.name:"All projects")+(cat==="all"?"":` · ${cat}`)+(demo==="yes"?" · with demo":"");
+      document.getElementById("resTitle").textContent = searching()
+        ? `Search by "${q.trim()}"`
+        : (t?t.name:"All projects")+(cat==="all"?"":` · ${cat}`)+(demo==="yes"?" · with demo":"");
       document.getElementById("resCount").textContent = `${list.length} project${list.length===1?"":"s"}`;
-      if(!list.length){grid.innerHTML='<div class="empty">No projects match this filter.</div>';return;}
+      if(!list.length){grid.innerHTML=`<div class="empty">${searching()?"Nothing to show":"No projects match this filter."}</div>`;return;}
       grid.innerHTML=list.map(p=>{const tt=byId[p.track];
         return `<article class="card ${p.hasDemo?'has-demo':''}" data-id="${p.id}">
           <div class="cover">${coverHTML(p)}<span class="tag"><span class="swatch" style="background:${tt.color}"></span>${tt.short}</span>${p.hasDemo?`<span class="vbadge">${PLAY}Demo</span>`:""}</div>
@@ -191,8 +210,17 @@
         </article>`;}).join("");
       grid.querySelectorAll(".card").forEach(c=>c.onclick=()=>openModal(c.dataset.id));
     }
-    function renderAll(){renderDemoList();renderTrackList();renderCatList();renderGrid();}
+    function renderAll(){renderDemoList();renderTrackList();renderCatList();filterGroups.hidden=searching();renderGrid();}
     document.getElementById("reset").onclick=()=>{track="all";cat="all";demo="all";renderAll();};
+
+    searchInput.oninput=()=>{
+      q=searchInput.value;
+      // starting a search resets any active sidebar filters first
+      if(searching()){track="all";cat="all";demo="all";}
+      searchClear.hidden=!searching();
+      renderAll();
+    };
+    searchClear.onclick=()=>{q="";searchInput.value="";searchClear.hidden=true;renderAll();};
 
     const scrim=document.getElementById("scrim"), modalEl=document.getElementById("modal");
     function openModal(id){
