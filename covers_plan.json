@@ -402,5 +402,9 @@
  {
   "slug": "pocketdoc",
   "prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: PocketDoc — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: Tinkerer. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background."
+ },
+ {
+  "slug": "custos",
+  "prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Custos — Finance. deep teal and burnished gold, abstract ledger grid fused with a shield and encrypted invoice glyphs, secure fintech mood. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background."
  }
 ]

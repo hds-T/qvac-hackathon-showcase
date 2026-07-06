@@ -1109,5 +1109,16 @@
     "demo_video": null,
     "live_demo": null,
     "category": "Healthcare"
+  },
+  {
+    "project_name": "Custos",
+    "team_name": "Tim (@winsznx) + Anu (@svector)",
+    "description": "Air-gapped agentic accounts-payable settlement: reads invoices locally via QVAC (vision/OCR/RAG/tool-calling), verifies against an internal ERP, and stages on-chain USD\u20ae settlement with a human hold-to-authorize signer. Zero cloud AI; only non-AI remote calls are the Sepolia RPC and a blind P2P relay.",
+    "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Custos — Finance. deep teal and burnished gold, abstract ledger grid fused with a shield and encrypted invoice glyphs, secure fintech mood. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
+    "track": "General Purpose",
+    "github": "https://github.com/winsznx/custos",
+    "demo_video": "https://youtu.be/iwKL3Lr6258?si=aA907k70UCl-ZosH",
+    "live_demo": null,
+    "category": "Finance / Accounts Payable Automation"
   }
 ]
