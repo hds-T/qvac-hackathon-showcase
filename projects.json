@@ -402,7 +402,7 @@
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Coldwire — Legal. deep navy and gold, scales of justice merged with document pages and lock icons, professional corporate mood. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/tang-vu/coldwire",
-    "demo_video": null,
+    "demo_video": "https://www.youtube.com/watch?v=BbDnA8-KgZE",
     "live_demo": "https://coldwire-edge-ai.vercel.app",
     "category": "Legal"
   },
