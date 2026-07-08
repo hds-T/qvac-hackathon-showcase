@@ -409,7 +409,7 @@
   {
     "project_name": "Conduit",
     "team_name": null,
-    "description": "Testnet only. Payments use test USD₮ on Ethereum Sepolia — no real money moves. This is a",
+    "description": "A serverless, peer-to-peer marketplace for AI inference where a settled USD₮ payment is the access handshake — every model runs fully on-device via QVAC, weights never move, and the cloud sees nothing (Sepolia testnet demo).",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Conduit — Web3. purple and cyan decentralized mesh nodes, blockchain lattice, peer-to-peer connection lines on dark background. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/Conduit-Organization/conduit",
@@ -420,7 +420,7 @@
   {
     "project_name": "Deskie",
     "team_name": null,
-    "description": "Deskie is a learning ai solution in education, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "Turns lecture recordings, slides, and PDFs into searchable notes, flashcards, quizzes, and a personal AI tutor — an Electron study companion powered by the QVAC SDK with no cloud.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Deskie — Education. warm orange and soft purple, open book with floating knowledge particles, friendly learning atmosphere. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/JudeTulel/Deskie",
@@ -442,7 +442,7 @@
   {
     "project_name": "Doc Red-Flag Scanner",
     "team_name": null,
-    "description": "Doc Red-Flag Scanner is a document ai solution in legal, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "Point your camera at a loan, rental, or employment contract — on-device OCR and a local LLM flag predatory clauses and risk levels with no cloud AI or API keys.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Doc Red — Legal. deep navy and gold, scales of justice merged with document pages and lock icons, professional corporate mood. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/mikkiiee33/Doc-Red-Flag-Scanner",
@@ -453,7 +453,7 @@
   {
     "project_name": "edge-clinic-ai",
     "team_name": null,
-    "description": "edge-clinic-ai is a hipaa-compliant health records solution in healthcare, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "Fully offline clinical AI for doctors — runs quantized GGUF models via the QVAC SDK for symptom dialogue, diagnosis assistance, patient notes, and treatment suggestions.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: edge — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/bul-python/edge-clinic-ai",
@@ -464,7 +464,7 @@
   {
     "project_name": "EdgeVoC: Private Offline Feedback Analyst",
     "team_name": null,
-    "description": "EdgeVoC: Private Offline Feedback Analyst is a customer feedback ai (edgevoc) solution in business, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "A CLI that reads customer feedback CSVs and produces a Markdown report with themes, pain points, risk signals, and an executive brief — entirely on-device via the QVAC SDK.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: EdgeVoC: Private Offline Feedback Analyst — Privacy/Security. shield silhouette with encrypted data streams, matte black and electric blue, zero-trust aesthetic. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/Faadil1/edgevoc-qvac",
@@ -475,7 +475,7 @@
   {
     "project_name": "EdgeWell",
     "team_name": null,
-    "description": "Project: EdgeWell — Private, on-device personal health + finance coach",
+    "description": "A private, on-device personal health and finance coach on the QVAC SDK — combining a health agent, a finance agent, a multi-agent orchestrator, and a local RAG index over your notes, with P2P delegation to a peer when you want a bigger model.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: EdgeWell — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/choguun/edgewell/",
@@ -486,7 +486,7 @@
   {
     "project_name": "Fibiom",
     "team_name": null,
-    "description": "The WDK wallet extension is a separate companion project (its own repo).",
+    "description": "A local-first personal and business finance app with an on-device AI CFO — all AI runs on your machine through the QVAC SDK with no remote inference, and your financial data stays in an encrypted local SQLite store.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Fibiom — Finance. dark green and teal trading charts, secure vault imagery, futuristic fintech glow. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/fibiom-org/fibiom-electron",
@@ -508,7 +508,7 @@
   {
     "project_name": "InferMart",
     "team_name": null,
-    "description": "InferMart is a ai inference marketplace (infermart) solution in infrastructure, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "P2P marketplace where a seller rents spare QVAC inference to a buyer over Holepunch, metering tokens and settling each request in real testnet USDT — no servers or cloud.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: InferMart — Creative. vibrant gradient splashes, generative art particles, playful creative studio energy. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/ajanaku1/InferMart",
@@ -519,7 +519,7 @@
   {
     "project_name": "KINKEEPER Guardian Mesh",
     "team_name": null,
-    "description": "Important: First run downloads QVAC models from the network (~2–4 GB). After cache, core inference can run offline. Telegram requires internet when enabled.",
+    "description": "Local AI that protects families from scam calls, fake invoices, and social engineering — running on your device via QVAC, not in the cloud.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: KINKEEPER Guardian Mesh — Emergency. dramatic amber and red emergency lighting, rescue mesh network nodes, urgent but hopeful atmosphere. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/mohamedwael201193/KINKEEPER",
@@ -530,7 +530,7 @@
   {
     "project_name": "Klaim",
     "team_name": null,
-    "description": "Klaim is a insurance claims (klaim) solution in finance, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "Processes insurance claim evidence locally — QVAC OCR, embeddings, and schema-constrained extraction feed deterministic policy evaluation for a signed payout package.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Klaim — Other. abstract sovereign AI edge computing, local neural glow on device silhouette, modern tech gradient. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/0takuc0mrade/Klaim.git",
@@ -541,7 +541,7 @@
   {
     "project_name": "Lantern",
     "team_name": null,
-    "description": "bash npm install npm run check ESLint + 42 no-egress checks + 166 tests, one command npm run demo LANTERNENGINE=mock works on ANY machine, no model download",
+    "description": "A private, fully on-device sight-and-voice assistant for blind and low-vision people — point your camera and ask, and it describes scenes, reads text aloud, identifies money and medication, and warns of hazards, all via QVAC edge AI with nothing leaving your device.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Lantern — Accessibility. inclusive soft pastels, universal access symbols, gentle human-centered design motifs. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/Tonyflam/lantern",
@@ -563,7 +563,7 @@
   {
     "project_name": "LocalVault AI",
     "team_name": null,
-    "description": "LocalVault AI is a document ai solution in legal, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "Confidential contract intelligence on Windows — QVAC-powered review with policy checks, citation-bound evidence, amendment drafts, and auditable exports, zero remote AI.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: LocalVault AI — Legal. deep navy and gold, scales of justice merged with document pages and lock icons, professional corporate mood. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/zcy0109/qvac-localvault-ai",
@@ -618,7 +618,7 @@
   {
     "project_name": "Offscript",
     "team_name": null,
-    "description": "Offscript is a offline ai assistant (offscript) solution in productivity, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "Offline filmmaking assistant — generates scenes, dialogue, shot lists, and character profiles, checks continuity with QVAC RAG, and accepts voice input via Whisper, all on-device.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Offscript — Privacy/Security. shield silhouette with encrypted data streams, matte black and electric blue, zero-trust aesthetic. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/Terese678/offscript",
@@ -629,7 +629,7 @@
   {
     "project_name": "Paperdoc",
     "team_name": null,
-    "description": "Paperdoc is a medical paper digitization (paperdoc) solution in healthcare, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "Offline medical scribe — records doctor-patient conversations, transcribes with speaker diarization, and generates editable SOAP notes via QVAC with no cloud or PHI leakage.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Paperdoc — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/lksxyz/paperdoc",
@@ -662,7 +662,7 @@
   {
     "project_name": "RescueMesh",
     "team_name": null,
-    "description": "Note: Run python3 capturescreenshots.py while the app is running to capture these screenshots.",
+    "description": "An offline field-operations AI copilot for emergency and disaster-response teams — on-device LLM reasoning, RAG, and image analysis via QVAC, with peer-to-peer sharing and delegated compute across a local mesh.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: RescueMesh — Emergency. dramatic amber and red emergency lighting, rescue mesh network nodes, urgent but hopeful atmosphere. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/Rohan5commit/rescuemesh",
@@ -684,7 +684,7 @@
   {
     "project_name": "Sehat — On-Device Family Health AI",
     "team_name": null,
-    "description": "Powered by QVAC MedPsy-4B — Tether's own edge medical model. We independently",
+    "description": "An offline-first family health assistant that turns one home PC into a private health hub — ingesting labs, prescriptions, and notes into a local vector index and answering in any language via on-device MedPsy, with nothing leaving the home network.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Sehat — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/PugarHuda/sehat",
@@ -695,7 +695,7 @@
   {
     "project_name": "Solace Mesh",
     "team_name": null,
-    "description": "Solace Mesh is a crypto & blockchain solution in web3, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "Multi-agent local RAG with Hyperswarm P2P inference delegation and mock USDT compute settlement — private document search and completions run entirely on-device via the QVAC SDK.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Solace Mesh — Web3. purple and cyan decentralized mesh nodes, blockchain lattice, peer-to-peer connection lines on dark background. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/mamoor123/solace-mesh",
@@ -706,7 +706,7 @@
   {
     "project_name": "Solace — Sovereign, Local-First AI on the Tether QVAC SDK",
     "team_name": null,
-    "description": "[Eric: add the final YouTube/Drive link here before submitting]",
+    "description": "A local-first AI CFO — a desktop finance app where every piece of intelligence runs entirely on your device. No cloud, no remote inference, no data leaving your machine. Your financial life is private by architecture, not by promise.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Solace — Privacy/Security. shield silhouette with encrypted data streams, matte black and electric blue, zero-trust aesthetic. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/aggreyeric/tether-qvac-solace",
@@ -717,7 +717,7 @@
   {
     "project_name": "Suite",
     "team_name": null,
-    "description": "A local-first autonomous agent that runs a small business's entire month-end",
+    "description": "A local-first autonomous agent that runs a small business's entire month-end financial review — every inference runs on-device via the QVAC SDK, so your books never leave your machine. Ships as a cross-platform Electron desktop app.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Suite — DevTools. terminal green on dark charcoal, code brackets and pipeline nodes, developer workspace aesthetic. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/Misty-clouds/suite-local-ai.git",
@@ -728,7 +728,7 @@
   {
     "project_name": "Survival Co-pilot",
     "team_name": null,
-    "description": "Survival Co-pilot is a rescue mesh communication solution in emergency, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "Meshtastic LoRa mesh base station running on-device LLM and RAG via the QVAC SDK to auto-answer survival questions from handheld radios — no internet or cloud.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Survival Co — Emergency. dramatic amber and red emergency lighting, rescue mesh network nodes, urgent but hopeful atmosphere. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/Chriskatz/survival-copilot",
@@ -750,7 +750,7 @@
   {
     "project_name": "Vanguard",
     "team_name": null,
-    "description": "A self-hardening immune system for your local-AI fleet.",
+    "description": "A drop-in on-device prompt-injection firewall for local LLMs — a sub-ms regex fast-path, a Hyperswarm P2P mesh that shares attack immunity across your devices, and a LoRA-tuned Qwen3 classifier, no cloud.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Vanguard — Legal. deep navy and gold, scales of justice merged with document pages and lock icons, professional corporate mood. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/SyaugiAlkaf/vanguard",
@@ -761,7 +761,7 @@
   {
     "project_name": "Vitalog",
     "team_name": null,
-    "description": "Restricted networks: first-run model downloads need outbound access to the QVAC",
+    "description": "A private, on-device health journal and explainer — log symptoms by voice, understand your own medical documents in plain language, and summarize everything into a doctor-ready one-pager, with all AI running locally via QVAC even in airplane mode.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Vitalog — Privacy/Security. shield silhouette with encrypted data streams, matte black and electric blue, zero-trust aesthetic. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/Shady-web/VitalLog-App",
@@ -794,7 +794,7 @@
   {
     "project_name": "DeadLine Guardian",
     "team_name": null,
-    "description": "Every day, people miss important deadlines hidden across:",
+    "description": "An offline-first assistant that captures deadlines from voice notes, PDFs, screenshots, and camera scans entirely on-device via QVAC — no manual entry, no internet, no compromised privacy.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: DeadLine Guardian — Privacy/Security. shield silhouette with encrypted data streams, matte black and electric blue, zero-trust aesthetic. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/yashpunmiya/Deadline-Gaurdian",
@@ -816,7 +816,7 @@
   {
     "project_name": "hiraia",
     "team_name": null,
-    "description": "Guiding principle: if forced to choose, factual accuracy ranks above perfect Tagalog/Bisaya fluency. A tutor that is occasionally stiff but always correct beats a fluent one that misleads a child.",
+    "description": "An offline, on-device AI Science tutor for Filipino grade-school students — a Tagalog-first, retrieval-augmented tutor whose model, language adapters, science databank, and illustrations all ship inside the APK and run entirely on the phone via QVAC.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: hiraia — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/helloluis/hiraia",
@@ -827,7 +827,7 @@
   {
     "project_name": "Kvaq",
     "team_name": null,
-    "description": "Kvaq is a ai sovereignty platform (kvaq) solution in privacy, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "Android on-device AI chat app — routes LLM chat, embeddings, RAG, and Whisper speech through the QVAC SDK in an embedded Bare worker, with no cloud fallback.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Kvaq — Privacy/Security. shield silhouette with encrypted data streams, matte black and electric blue, zero-trust aesthetic. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/aljazceru/kvaq",
@@ -838,7 +838,7 @@
   {
     "project_name": "Mediscan",
     "team_name": null,
-    "description": "This app is for medicine organization and basic information support only. It is not a replacement for doctors, pharmacists, or professional medical advice.",
+    "description": "An offline-first mobile medicine scanner and personal medication library — scan or upload medicine-label photos, extract text with QVAC OCR, match against a local reference database, and save records to a private vault.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Mediscan — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/reiisuu/mediscan",
@@ -860,7 +860,7 @@
   {
     "project_name": "Memi",
     "team_name": null,
-    "description": "Memi is a on-device photo ai solution in vision, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "A local-first Android meme maker — snap a photo, run a QVAC multimodal model on-device to draft captions, then save or share with no cloud inference.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Memi — Creative. vibrant gradient splashes, generative art particles, playful creative studio energy. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/fozagtx/memi",
@@ -882,7 +882,7 @@
   {
     "project_name": "Offline Field Copilot",
     "team_name": null,
-    "description": "Offline Field Copilot is a offline ai assistant solution in productivity, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "Android field copilot — paste private field notes, ask practical questions, and get concise on-device answers from the QVAC SDK without any cloud LLM APIs.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Offline Field Copilot — Privacy/Security. shield silhouette with encrypted data streams, matte black and electric blue, zero-trust aesthetic. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/codeproof-tech/offline-field-copilot",
@@ -893,7 +893,7 @@
   {
     "project_name": "PawVAC",
     "team_name": null,
-    "description": "MedGemma is a human medical model; PawVac uses it for urgency banding and questions-to-ask, not",
+    "description": "A local-first, offline pet-health app — your pet's records, the AI that reasons over them, the embeddings memory, and the safety logic all run on the phone via QVAC (MedGemma-4B, EmbeddingGemma, Whisper, OCR), giving triage guidance with nothing leaving the device.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: PawVAC — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/LevanIlashvili/PawVAC",
@@ -915,7 +915,7 @@
   {
     "project_name": "Phone Powered Decentralized AI",
     "team_name": null,
-    "description": "Phone Powered Decentralized AI is a crypto & blockchain solution in web3, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "Self-hosted deployer that provisions the acurast-qvac private on-device LLM server to Acurast network phones — one-click deploy with live progress and tunnel URLs.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Phone Powered Decentralized AI — Web3. purple and cyan decentralized mesh nodes, blockchain lattice, peer-to-peer connection lines on dark background. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/AndreasGassmann/acurast-deployer-service",
@@ -926,7 +926,7 @@
   {
     "project_name": "PhotoPilot with Junction Desktop",
     "team_name": null,
-    "description": "TL;DR — pnpm install && pnpm p2p:bundle, then pnpm ios or pnpm android on a",
+    "description": "A private, on-device photo assistant — edit photos by talking to a small LLM that runs entirely on your phone via QVAC, and hand heavier jobs like image generation or 4× upscaling to a paired desktop over an encrypted P2P link.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: PhotoPilot with Junction Desktop — Productivity. clean white and slate blue, organized workspace abstract, efficient minimal productivity mood. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/tobiaswu/photopilot",
@@ -937,7 +937,7 @@
   {
     "project_name": "ResonanceAI",
     "team_name": null,
-    "description": "Note: routing is now a single shared room (the \"Keet model\"), so there are no",
+    "description": "A mobile app that routes the web by meaning instead of an index someone else owns — 100% on-device semantic search and reasoning for Android, built with the QVAC SDK.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: ResonanceAI — Privacy/Security. shield silhouette with encrypted data streams, matte black and electric blue, zero-trust aesthetic. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/Helldez/Resonance",
@@ -959,7 +959,7 @@
   {
     "project_name": "Wayfare",
     "team_name": null,
-    "description": "Flagship and mid-range phones can deliver production-quality AI without sending a single byte to the cloud. Wayfarer proves it.",
+    "description": "A private offline travel companion for Android — translates 49 languages, scans signs and menus with camera OCR, does voice-to-voice translation, and runs a multimodal tool-using agent, all on-device via the QVAC SDK.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Wayfare — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/prometheus-18/Wayfarer",
@@ -981,7 +981,7 @@
   {
     "project_name": "CareSwarm",
     "team_name": null,
-    "description": "My father is 62 and gets chest tightness when he climbs stairs; it eases when he rests. What should we do?",
+    "description": "A local-first AI agent economy for private healthcare — a swarm of specialist medical agents plan, retrieve guidelines, and answer in your language entirely on an 8GB laptop via QVAC, with heavy inference optionally delegated P2P and paid per job.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: CareSwarm — Web3. purple and cyan decentralized mesh nodes, blockchain lattice, peer-to-peer connection lines on dark background. Track: Psy Models. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Psy Models",
     "github": "https://github.com/CareSwarm/careswarm",
@@ -1003,7 +1003,7 @@
   {
     "project_name": "HealthVault Guardian",
     "team_name": null,
-    "description": "HealthVault Guardian is a hipaa-compliant health records solution in healthcare, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "Local-first health-record assistant — import records, ask education-focused questions with citations, export visit-prep evidence, and run MedPsy via QVAC with no cloud AI.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: HealthVault Guardian — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: Psy Models. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Psy Models",
     "github": "https://github.com/jj5437/healthvault-guardian",
@@ -1014,11 +1014,11 @@
   {
     "project_name": "lifeline",
     "team_name": null,
-    "description": "lifeline is a disaster response solution in emergency, running entirely on-device via QVAC with no cloud AI dependency.",
+    "description": "Offline first-aid assistant grounded in a local manual — answers triage questions with citations, delegates heavy models to a peer over encrypted P2P, and falls back locally.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: lifeline — Emergency. dramatic amber and red emergency lighting, rescue mesh network nodes, urgent but hopeful atmosphere. Track: Psy Models. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Psy Models",
     "github": "https://github.com/harshdev2909/lifeline",
-    "demo_video": null,
+    "demo_video": "https://www.youtube.com/watch?v=W-lUp4plt6Y",
     "live_demo": null,
     "category": "Emergency"
   },
@@ -1036,7 +1036,7 @@
   {
     "project_name": "MindSafe",
     "team_name": null,
-    "description": "javascript import { loadModel } from '@qvac/sdk';",
+    "description": "A fully offline, local-first mental wellness companion — real-time voice conversation, journaling RAG, and OCR medical intake all reasoned on-device by a local MedPsy LLM via the QVAC SDK, with no telemetry or cloud calls.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: MindSafe — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: Psy Models. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Psy Models",
     "github": "https://github.com/The-Natri/mindsafe-qvac",
@@ -1047,7 +1047,7 @@
   {
     "project_name": "PharmaGuard Edge",
     "team_name": null,
-    "description": "\"Your patient's data never leaves the device. Clinical AI that hospitals can actually deploy.\"",
+    "description": "An offline clinical antibiotic-stewardship assistant — screens PII, checks a local FDA drug cache, and uses QVAC inference to recommend AWaRe-classified antibiotics with audit logs, so patient data never leaves the device.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: PharmaGuard Edge — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: Psy Models. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Psy Models",
     "github": "https://github.com/prakash023-hub/pharmaguard-edge",
@@ -1069,7 +1069,7 @@
   {
     "project_name": "Scrubd",
     "team_name": null,
-    "description": "Note: runlog.csv is included in the repository to provide auditable proof of offline performance on the target hardware.",
+    "description": "A fully offline clinical-note PHI de-identifier — detects 18 HIPAA Safe Harbor categories with regex, recovers misses with MedPsy via the QVAC SDK, and replaces PHI with realistic, consistent surrogates, all on-device.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Scrubd — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: Psy Models. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Psy Models",
     "github": "https://github.com/Anand-0038/scrubd.git",
@@ -1102,7 +1102,7 @@
   {
     "project_name": "PocketDoc",
     "team_name": null,
-    "description": "Architecture Note: The BeagleY-AI board (Cortex-A53 / ARMv8.0) cannot run QVAC's native ML binaries directly (they require ARMv8.2+). So the board acts as a lightweight web gateway, and the laptop handles all AI inference via the QVAC SDK.",
+    "description": "A fully offline medical triage assistant — your phone connects over WiFi to a BeagleY-AI board that relays text, voice, and camera queries to a laptop running the QVAC SDK LLM, Whisper STT, and RAG pipeline, with no cloud.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: PocketDoc — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: Tinkerer. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Tinkerer",
     "github": "https://github.com/devbh04/pocketdoc-beagleY",
@@ -1113,7 +1113,7 @@
   {
     "project_name": "Custos",
     "team_name": "Tim (@winsznx) + Anu (@svector)",
-    "description": "Air-gapped agentic accounts-payable settlement: reads invoices locally via QVAC (vision/OCR/RAG/tool-calling), verifies against an internal ERP, and stages on-chain USD\u20ae settlement with a human hold-to-authorize signer. Zero cloud AI; only non-AI remote calls are the Sepolia RPC and a blind P2P relay.",
+    "description": "Air-gapped agentic accounts-payable settlement: reads invoices locally via QVAC (vision/OCR/RAG/tool-calling), verifies against an internal ERP, and stages on-chain USD₮ settlement with a human hold-to-authorize signer. Zero cloud AI; only non-AI remote calls are the Sepolia RPC and a blind P2P relay.",
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Custos — Finance. deep teal and burnished gold, abstract ledger grid fused with a shield and encrypted invoice glyphs, secure fintech mood. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/winsznx/custos",
