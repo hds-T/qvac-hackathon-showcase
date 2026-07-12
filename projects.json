@@ -244,13 +244,13 @@
   {
     "project_name": "Pouchio AI",
     "team_name": null,
-    "description": "Privacy-first Gmail client with on-device summaries, smart triage, semantic search, and draft replies — powered by local Llama and embedding models.",
-    "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Pouchio AI — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
+    "description": "Privacy-first Gmail client that summarizes and triages your inbox entirely on-device — on-device summaries, smart triage, semantic search, and draft replies powered by local Llama and embedding models. No email content ever leaves the phone.",
+    "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Pouchio AI — Productivity / Email. clean inbox and envelope motifs abstracted into flowing data streams, calm indigo and teal gradients, minimalist modern productivity aesthetic. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/lucasespinosa28/Pouchio",
     "demo_video": "https://www.youtube.com/shorts/aD8F_IOpMLw",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Productivity / Email AI"
   },
   {
     "project_name": "Anamnesis",
