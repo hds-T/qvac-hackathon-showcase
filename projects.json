@@ -270,7 +270,7 @@
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: qvac_mind_ease — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform, clean minimalist hospital-tech aesthetic. Track: Psy Models. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Psy Models",
     "github": "https://github.com/ponchy123/qvac_mind_ease",
-    "demo_video": "https://youtu.be/VIDEO_ID",
+    "demo_video": null,
     "live_demo": null,
     "category": "Healthcare"
   },
