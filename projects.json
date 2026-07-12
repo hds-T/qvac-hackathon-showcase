@@ -299,13 +299,13 @@
   {
     "project_name": "Sanctum",
     "team_name": null,
-    "description": "Forensic document analysis for legal and compliance teams — MedPsy-powered review, tamper-evident logging, and mobile access with zero cloud inference.",
-    "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Sanctum — Legal. deep navy and gold, scales of justice merged with document pages and lock icons, professional corporate mood. Track: Psy Models. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
+    "description": "Private health-document analyst that reads your medical records entirely on-device — MedPsy-powered long-context Q&A, prompt-injection defense, PHI-scrubbed optional web research, and forensic logging with zero cloud inference.",
+    "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Sanctum — Healthcare. soft medical blue gradients, abstract neural network over heartbeat waveform with document and lock motifs, clean minimalist hospital-tech aesthetic. Track: Psy Models. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Psy Models",
     "github": "https://github.com/AaroneGeorge/Sanctum",
     "demo_video": "https://www.youtube.com/shorts/6TrYZ-uAV_Y",
     "live_demo": null,
-    "category": "Legal"
+    "category": "Healthcare"
   },
   {
     "project_name": "PrivateBounty AI",
