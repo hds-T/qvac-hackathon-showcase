@@ -178,13 +178,13 @@
   {
     "project_name": "Muffin AI",
     "team_name": null,
-    "description": "Privacy-first personal finance assistant on iOS and Android — budgeting, insights, and chat with your money data kept entirely on-device.",
-    "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Muffin AI — Web3. purple and cyan decentralized mesh nodes, blockchain lattice, peer-to-peer connection lines on dark background. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
+    "description": "Privacy-first mobile personal finance assistant on iOS and Android — local financial memory across wallets, bank accounts, cards, upcoming payments, and goals, with on-device QVAC-powered chat over your money data.",
+    "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Muffin AI — Finance. dark green and teal trading charts, secure vault imagery, futuristic fintech glow. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/ssadkov/muffin-ai",
     "demo_video": "https://youtu.be/XZxL72rn7qE",
     "live_demo": null,
-    "category": "Web3"
+    "category": "Finance"
   },
   {
     "project_name": "🛡️ DIM Protocol — Digital Immune Mesh",
