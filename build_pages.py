@@ -55,6 +55,7 @@ def adapt(data):
             "category": r.get("category") or "Other",
             "description": (r.get("description") or "").strip(),
             "links": links,
+            "social_vote": int(r.get("social_vote") or 0),
         })
     return out
 
@@ -70,6 +71,16 @@ def js_str(s):
 
 
 ARROW = '<svg viewBox="0 0 14 14" width="12" fill="none"><path d="M2 7h9M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg>'
+
+THUMB = ('<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>')
+
+
+def thumbs_html(n):
+    n = int(n or 0)
+    if n <= 0:
+        return ""
+    label = f'{n} community vote{"" if n == 1 else "s"}'
+    return f'<span class="thumbs" title="{label}" aria-label="{label}">{THUMB * n}</span>'
 
 
 def link_buttons(links):
@@ -159,6 +170,8 @@ def page(p):
   .tag{{display:inline-flex;align-items:center;gap:7px;height:26px;padding:0 11px;border-radius:var(--r-pill);font-size:12px;font-weight:700;margin:22px 0 0;background:{t["color"]}22;color:{t["color"]}}}
   .tag .sw{{width:7px;height:7px;border-radius:2px;background:{t["color"]}}}
   h1{{font-size:34px;font-weight:700;letter-spacing:-.02em;margin:12px 0 4px}}
+  .thumbs{{display:inline-flex;align-items:center;gap:1px;vertical-align:middle;margin-left:8px;color:var(--accent)}}
+  .thumbs svg{{width:.62em;height:.62em}}
   .sub{{color:var(--muted);font-size:14px;min-height:1px}}
   .m-grid{{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}}
   .m-field{{background:var(--bg);border:1px solid var(--line2);border-radius:10px;padding:11px 13px}}
@@ -184,7 +197,7 @@ def page(p):
   <div class="wrap"><main>
     {cover_block}
     <span class="tag"><span class="sw"></span>{e(t["name"])}</span>
-    <h1>{e(p["name"])}</h1>
+    <h1>{e(p["name"])}{thumbs_html(p["social_vote"])}</h1>
     <div class="sub">{("by " + e(p["team"])) if p["team"] else ""}</div>
     <div class="m-grid">{fields}</div>
     <p class="desc">{e(p["description"])}</p>

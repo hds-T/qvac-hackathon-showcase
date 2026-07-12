@@ -8,7 +8,8 @@
     "github": "https://github.com/savewithstash/stash",
     "demo_video": "https://youtu.be/DqD801QB88w?si=doznZENXT_Ngj1CZ",
     "live_demo": null,
-    "category": "Productivity"
+    "category": "Productivity",
+    "social_vote": 1
   },
   {
     "project_name": "Quorum",
@@ -19,7 +20,8 @@
     "github": "https://github.com/edycutjong/quorum",
     "demo_video": "https://youtu.be/tnVqrbXNMco",
     "live_demo": null,
-    "category": "Legal"
+    "category": "Legal",
+    "social_vote": 1
   },
   {
     "project_name": "Offline Privacy-First AI Office Assistant",
@@ -30,7 +32,8 @@
     "github": "https://github.com/caocname/qvac-privacy-ai-office",
     "demo_video": "https://youtu.be/sHkjUeodIdg",
     "live_demo": null,
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 1
   },
   {
     "project_name": "stash",
@@ -41,7 +44,8 @@
     "github": "https://github.com/fozagtx/stash",
     "demo_video": "https://drive.google.com/file/d/12-rPSsLsGyuLh8P0P2Q3_pJtIAeIcCAH",
     "live_demo": null,
-    "category": "Productivity"
+    "category": "Productivity",
+    "social_vote": 1
   },
   {
     "project_name": "Beacon",
@@ -52,7 +56,8 @@
     "github": "https://github.com/edycutjong/beacon",
     "demo_video": "https://youtu.be/148A6cm2VDM",
     "live_demo": null,
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 1
   },
   {
     "project_name": "Pulse",
@@ -63,7 +68,8 @@
     "github": "https://github.com/edycutjong/pulse",
     "demo_video": "https://youtube.com/shorts/jXlt77XjEQg",
     "live_demo": null,
-    "category": "Emergency"
+    "category": "Emergency",
+    "social_vote": 1
   },
   {
     "project_name": "Scarecrow",
@@ -74,7 +80,8 @@
     "github": "https://github.com/edycutjong/scarecrow",
     "demo_video": "https://youtu.be/fB8f_LXUss4",
     "live_demo": null,
-    "category": "Emergency"
+    "category": "Emergency",
+    "social_vote": 2
   },
   {
     "project_name": "Diamesh",
@@ -85,7 +92,8 @@
     "github": "https://github.com/David-Horjet/Diamesh",
     "demo_video": "https://youtu.be/HXhb-YWfmHg?si=NtMZB0dyLFisAoi8",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "MedLifeSim",
@@ -96,7 +104,8 @@
     "github": "https://github.com/pisuthd/medlifesim",
     "demo_video": "https://youtu.be/h1j-_VYcWP8",
     "live_demo": "https://medlifesim.xyz/",
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "Biomed AI",
@@ -107,7 +116,8 @@
     "github": "https://github.com/Handilusa/Biomed-AI",
     "demo_video": "https://youtu.be/9ChBOnDub_I?si=pKfTxL4WH1yn36T9",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "SignSafe",
@@ -118,7 +128,8 @@
     "github": "https://github.com/SunWeb3Sec/SignSafe",
     "demo_video": "https://youtu.be/cNjsG3NFUlc",
     "live_demo": null,
-    "category": "Legal"
+    "category": "Legal",
+    "social_vote": 1
   },
   {
     "project_name": "qvac-finance-agent",
@@ -129,7 +140,8 @@
     "github": "https://github.com/kinance/qvac-finance-agent",
     "demo_video": "https://youtu.be/7NrfnMkW6PM",
     "live_demo": null,
-    "category": "Finance"
+    "category": "Finance",
+    "social_vote": 1
   },
   {
     "project_name": "AuPass",
@@ -140,7 +152,8 @@
     "github": "https://github.com/FelixRodrigues007/qvac-ouro-passaporte",
     "demo_video": "https://youtu.be/zM76XOV0gV0",
     "live_demo": "https://web-felix-rodrigues-projects.vercel.app",
-    "category": "Web3"
+    "category": "Web3",
+    "social_vote": 1
   },
   {
     "project_name": "QuorumGate",
@@ -151,7 +164,8 @@
     "github": "https://github.com/LevCey/QuorumGate",
     "demo_video": "https://youtu.be/tEbXUtIC73k",
     "live_demo": "https://quorumgate.com",
-    "category": "Legal"
+    "category": "Legal",
+    "social_vote": 1
   },
   {
     "project_name": "TaleTrip",
@@ -162,7 +176,8 @@
     "github": "https://github.com/web3yaso/taletrip",
     "demo_video": "https://youtu.be/HDn0kAgcNNY",
     "live_demo": null,
-    "category": "Education"
+    "category": "Education",
+    "social_vote": 1
   },
   {
     "project_name": "Edgency",
@@ -173,7 +188,8 @@
     "github": "https://github.com/NatX223/Edgency",
     "demo_video": "https://youtu.be/86TxAm9-0_o",
     "live_demo": "https://edgencyapp.vercel.app/",
-    "category": "Emergency"
+    "category": "Emergency",
+    "social_vote": 1
   },
   {
     "project_name": "Muffin AI",
@@ -184,7 +200,8 @@
     "github": "https://github.com/ssadkov/muffin-ai",
     "demo_video": "https://youtu.be/XZxL72rn7qE",
     "live_demo": null,
-    "category": "Finance"
+    "category": "Finance",
+    "social_vote": 1
   },
   {
     "project_name": "🛡️ DIM Protocol — Digital Immune Mesh",
@@ -195,7 +212,8 @@
     "github": "https://github.com/ilichb/QVAC",
     "demo_video": "https://youtu.be/9YcBIYLc2zQ",
     "live_demo": null,
-    "category": "Web3"
+    "category": "Web3",
+    "social_vote": 0
   },
   {
     "project_name": "MedVoice",
@@ -206,7 +224,8 @@
     "github": "https://github.com/muhaj-dev/medvoice",
     "demo_video": "https://www.youtube.com/watch?v=FpOGRjWDFWo",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "Lexis",
@@ -217,7 +236,8 @@
     "github": "https://github.com/0xkinno/Lexis",
     "demo_video": "https://youtu.be/8ted6zgIxfc?si=BPbTZvjE1gLAkVbb",
     "live_demo": "https://lexis-drab.vercel.app",
-    "category": "Legal"
+    "category": "Legal",
+    "social_vote": 1
   },
   {
     "project_name": "QVAC-PrivacyVault",
@@ -228,7 +248,8 @@
     "github": "https://github.com/yogeshkampalliwar/QVAC-PrivacyVault",
     "demo_video": "https://youtube.com/shorts/DunUaL2JzkQ",
     "live_demo": null,
-    "category": "Legal"
+    "category": "Legal",
+    "social_vote": 1
   },
   {
     "project_name": "EdgeMaster AI",
@@ -239,7 +260,8 @@
     "github": "https://github.com/MariyaKardash/EdgeMaster-AI",
     "demo_video": "https://youtu.be/PfvyGT0L_oM",
     "live_demo": null,
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 1
   },
   {
     "project_name": "Pouchio AI",
@@ -250,7 +272,8 @@
     "github": "https://github.com/lucasespinosa28/Pouchio",
     "demo_video": "https://www.youtube.com/shorts/aD8F_IOpMLw",
     "live_demo": null,
-    "category": "Productivity / Email AI"
+    "category": "Productivity / Email AI",
+    "social_vote": 1
   },
   {
     "project_name": "Anamnesis",
@@ -261,7 +284,8 @@
     "github": "https://github.com/RaYYeR220/anamnesis",
     "demo_video": "https://youtu.be/HoQwdmkdOPw",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "qvac_mind_ease",
@@ -272,7 +296,8 @@
     "github": "https://github.com/ponchy123/qvac_mind_ease",
     "demo_video": "https://youtu.be/KdXbatp__9I",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "OBDient",
@@ -283,7 +308,8 @@
     "github": "https://github.com/gazzimon/OBDient/",
     "demo_video": "https://youtu.be/AU2e477oyn0",
     "live_demo": "https://www.fiui.org.ar/",
-    "category": "Creative"
+    "category": "Creative",
+    "social_vote": 1
   },
   {
     "project_name": "computepool",
@@ -294,7 +320,8 @@
     "github": "https://github.com/freedanjeremiah/QVAC-Hackathon",
     "demo_video": "https://youtu.be/7Sbj3S2gGbE",
     "live_demo": null,
-    "category": "DevTools"
+    "category": "DevTools",
+    "social_vote": 1
   },
   {
     "project_name": "Sanctum",
@@ -305,7 +332,8 @@
     "github": "https://github.com/AaroneGeorge/Sanctum",
     "demo_video": "https://www.youtube.com/shorts/6TrYZ-uAV_Y",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "PrivateBounty AI",
@@ -316,7 +344,8 @@
     "github": "https://github.com/Mansi2007275/issue-resolver",
     "demo_video": "https://www.loom.com/share/c893a91b64074a09ab6e8cc7ed14584c",
     "live_demo": null,
-    "category": "DevTools"
+    "category": "DevTools",
+    "social_vote": 1
   },
   {
     "project_name": "PHAROS",
@@ -327,7 +356,8 @@
     "github": "https://github.com/Ridwannurudeen/pharos-medical-ai",
     "demo_video": "https://youtu.be/IZ1pvoh76R0",
     "live_demo": "https://pharos.gudman.xyz/",
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "KaleidoMind",
@@ -338,7 +368,8 @@
     "github": "https://github.com/kaleidoswap/kaleido-mind",
     "demo_video": "https://youtu.be/pXhuw_DDHZA",
     "live_demo": "https://kaleidoswap.github.io/kaleido-mind/",
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 1
   },
   {
     "project_name": "Nyx",
@@ -349,7 +380,8 @@
     "github": "https://github.com/aar0n4ik/Nyx",
     "demo_video": "https://youtu.be/FG19aIasp4E?si=KK5oqtJb0WalE-Jh",
     "live_demo": null,
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 1
   },
   {
     "project_name": "Triage-0",
@@ -360,7 +392,8 @@
     "github": "https://github.com/dmustapha/triage-0",
     "demo_video": "https://www.youtube.com/watch?v=Ws2Me2chnqY",
     "live_demo": null,
-    "category": "Emergency"
+    "category": "Emergency",
+    "social_vote": 3
   },
   {
     "project_name": "body debt",
@@ -371,7 +404,8 @@
     "github": "https://github.com/udirobert/bodydebt",
     "demo_video": null,
     "live_demo": "https://bodydebt.thisyearnofear.com",
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 0
   },
   {
     "project_name": "CaseRoom",
@@ -382,7 +416,8 @@
     "github": "https://github.com/alperimo/caseroom",
     "demo_video": "https://www.youtube.com/watch?v=V5WPJ37wYOc",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 0
   },
   {
     "project_name": "Chimera",
@@ -393,7 +428,8 @@
     "github": "https://github.com/TerexitariusStomp/localchimera",
     "demo_video": "https://www.youtube.com/watch?v=cHYsybxraNg",
     "live_demo": null,
-    "category": "Web3"
+    "category": "Web3",
+    "social_vote": 1
   },
   {
     "project_name": "Coldwire",
@@ -404,7 +440,8 @@
     "github": "https://github.com/tang-vu/coldwire",
     "demo_video": "https://www.youtube.com/watch?v=BbDnA8-KgZE",
     "live_demo": "https://coldwire-edge-ai.vercel.app",
-    "category": "Finance"
+    "category": "Finance",
+    "social_vote": 0
   },
   {
     "project_name": "Conduit",
@@ -415,7 +452,8 @@
     "github": "https://github.com/Conduit-Organization/conduit",
     "demo_video": "https://www.youtube.com/watch?v=zTWvUX2r-pQ&feature=youtu.be",
     "live_demo": "https://www.conduitt.xyz/",
-    "category": "Web3"
+    "category": "Web3",
+    "social_vote": 1
   },
   {
     "project_name": "Deskie",
@@ -426,7 +464,8 @@
     "github": "https://github.com/JudeTulel/Deskie",
     "demo_video": null,
     "live_demo": "https://deskielanding.vercel.app",
-    "category": "Education"
+    "category": "Education",
+    "social_vote": 1
   },
   {
     "project_name": "Devbrain",
@@ -437,7 +476,8 @@
     "github": "https://github.com/mrsaints004/Devbrain",
     "demo_video": "https://www.loom.com/share/67d553de53564d7e96ec8b526feea992",
     "live_demo": null,
-    "category": "DevTools"
+    "category": "DevTools",
+    "social_vote": 0
   },
   {
     "project_name": "Doc Red-Flag Scanner",
@@ -448,7 +488,8 @@
     "github": "https://github.com/mikkiiee33/Doc-Red-Flag-Scanner",
     "demo_video": "https://youtu.be/aAsRpLUeeoY",
     "live_demo": null,
-    "category": "Legal"
+    "category": "Legal",
+    "social_vote": 0
   },
   {
     "project_name": "edge-clinic-ai",
@@ -459,7 +500,8 @@
     "github": "https://github.com/bul-python/edge-clinic-ai",
     "demo_video": "https://youtube.com/shorts/cbP7qodct2k?si=eWgbo59qcGH0BKIY",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 0
   },
   {
     "project_name": "EdgeVoC: Private Offline Feedback Analyst",
@@ -470,7 +512,8 @@
     "github": "https://github.com/Faadil1/edgevoc-qvac",
     "demo_video": "https://youtu.be/l1DPcHAqujM",
     "live_demo": null,
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 0
   },
   {
     "project_name": "EdgeWell",
@@ -481,7 +524,8 @@
     "github": "https://github.com/choguun/edgewell/",
     "demo_video": "https://youtu.be/Jmfp6tCzwI4",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 0
   },
   {
     "project_name": "Fibiom",
@@ -492,7 +536,8 @@
     "github": "https://github.com/fibiom-org/fibiom-electron",
     "demo_video": "https://www.youtube.com/watch?v=4ocfp8MMLGU",
     "live_demo": null,
-    "category": "Finance"
+    "category": "Finance",
+    "social_vote": 1
   },
   {
     "project_name": "HOLOGRAM",
@@ -503,7 +548,8 @@
     "github": "https://github.com/Hologram-Technologies/hologram-os",
     "demo_video": null,
     "live_demo": "https://hologram-technologies.github.io/hologram-os/",
-    "category": "Web3"
+    "category": "Web3",
+    "social_vote": 0
   },
   {
     "project_name": "InferMart",
@@ -514,7 +560,8 @@
     "github": "https://github.com/ajanaku1/InferMart",
     "demo_video": null,
     "live_demo": "https://infermart.vercel.app/",
-    "category": "Creative"
+    "category": "Creative",
+    "social_vote": 1
   },
   {
     "project_name": "KINKEEPER Guardian Mesh",
@@ -525,7 +572,8 @@
     "github": "https://github.com/mohamedwael201193/KINKEEPER",
     "demo_video": "https://youtu.be/MWqLQz8Nv18",
     "live_demo": "https://kinkeeper-web.vercel.app/",
-    "category": "Emergency"
+    "category": "Emergency",
+    "social_vote": 0
   },
   {
     "project_name": "Klaim",
@@ -536,7 +584,8 @@
     "github": "https://github.com/0takuc0mrade/Klaim.git",
     "demo_video": "https://www.youtube.com/watch?v=hmgaUNO1CIM&feature=youtu.be",
     "live_demo": null,
-    "category": "Other"
+    "category": "Other",
+    "social_vote": 0
   },
   {
     "project_name": "Lantern",
@@ -547,7 +596,8 @@
     "github": "https://github.com/Tonyflam/lantern",
     "demo_video": "https://www.youtube.com/watch?v=mdK6TC9Yk3I",
     "live_demo": null,
-    "category": "Accessibility"
+    "category": "Accessibility",
+    "social_vote": 1
   },
   {
     "project_name": "Leash",
@@ -558,7 +608,8 @@
     "github": "https://github.com/danielAsaboro/Leash",
     "demo_video": "https://www.youtube.com/playlist?list=PLeERy8YL4mpQwT3OwpzOqjp23FlrLQ_1Y",
     "live_demo": "https://www.useleash.xyz/",
-    "category": "Agent Platform"
+    "category": "Agent Platform",
+    "social_vote": 2
   },
   {
     "project_name": "LocalVault AI",
@@ -569,7 +620,8 @@
     "github": "https://github.com/zcy0109/qvac-localvault-ai",
     "demo_video": "https://www.youtube.com/watch?v=Yt7dAAY0po4&feature=youtu.be",
     "live_demo": null,
-    "category": "Legal"
+    "category": "Legal",
+    "social_vote": 0
   },
   {
     "project_name": "med-scribe",
@@ -580,7 +632,8 @@
     "github": "https://github.com/danielamodu/med-scribe",
     "demo_video": "https://www.youtube.com/watch?v=CofDl_9ng94",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 0
   },
   {
     "project_name": "MedPsy Edge Agent — Multi-Agent Local Medical AI on QVAC SDK",
@@ -591,7 +644,8 @@
     "github": "https://github.com/Cubiczan/qvac-medpsy-agent",
     "demo_video": "https://www.youtube.com/watch?v=QZ2bBSyTfJQ&feature=youtu.be",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "MeetMind",
@@ -602,7 +656,8 @@
     "github": "https://github.com/ayushsingh82/MeetMind",
     "demo_video": null,
     "live_demo": null,
-    "category": "Productivity"
+    "category": "Productivity",
+    "social_vote": 0
   },
   {
     "project_name": "Meshmind",
@@ -613,7 +668,8 @@
     "github": "https://github.com/sediq247/meshmind",
     "demo_video": null,
     "live_demo": "https://meshmind-7cmd.onrender.com",
-    "category": "Emergency"
+    "category": "Emergency",
+    "social_vote": 0
   },
   {
     "project_name": "Offscript",
@@ -624,7 +680,8 @@
     "github": "https://github.com/Terese678/offscript",
     "demo_video": "https://youtu.be/T0vTZwPS5go",
     "live_demo": null,
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 1
   },
   {
     "project_name": "Paperdoc",
@@ -635,7 +692,8 @@
     "github": "https://github.com/lksxyz/paperdoc",
     "demo_video": "https://www.youtube.com/watch?v=7kHCKzzADKs",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "QVAC Guardian",
@@ -646,7 +704,8 @@
     "github": "https://github.com/3078024889/qvac-guardian",
     "demo_video": null,
     "live_demo": "https://3078024889.github.io/qvac-guardian/",
-    "category": "Legal"
+    "category": "Legal",
+    "social_vote": 0
   },
   {
     "project_name": "QvacMCP / AI agent-MCP-client",
@@ -657,7 +716,8 @@
     "github": "https://github.com/PupusasGame/qvac-mcp",
     "demo_video": "https://www.youtube.com/watch?v=PoboRVVynOY&feature=youtu.be",
     "live_demo": null,
-    "category": "DevTools"
+    "category": "DevTools",
+    "social_vote": 0
   },
   {
     "project_name": "RescueMesh",
@@ -668,7 +728,8 @@
     "github": "https://github.com/Rohan5commit/rescuemesh",
     "demo_video": "https://www.youtube.com/watch?v=DTEMiQ3LMkk&feature=youtu.be",
     "live_demo": null,
-    "category": "Emergency"
+    "category": "Emergency",
+    "social_vote": 0
   },
   {
     "project_name": "ScopeLine",
@@ -679,7 +740,8 @@
     "github": "https://github.com/veithly/scopeline",
     "demo_video": "https://www.youtube.com/watch?v=BVkk71L4s64&feature=youtu.be",
     "live_demo": "https://scopeline.veithly.workers.dev",
-    "category": "DevTools"
+    "category": "DevTools",
+    "social_vote": 1
   },
   {
     "project_name": "Sehat — On-Device Family Health AI",
@@ -690,7 +752,8 @@
     "github": "https://github.com/PugarHuda/sehat",
     "demo_video": "https://www.youtube.com/shorts/if1WZOFzKHc?feature=share",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 0
   },
   {
     "project_name": "Solace Mesh",
@@ -701,7 +764,8 @@
     "github": "https://github.com/mamoor123/solace-mesh",
     "demo_video": "https://www.youtube.com/watch?v=W54gfWcVAeM",
     "live_demo": null,
-    "category": "Web3"
+    "category": "Web3",
+    "social_vote": 1
   },
   {
     "project_name": "Solace — Sovereign, Local-First AI on the Tether QVAC SDK",
@@ -712,7 +776,8 @@
     "github": "https://github.com/aggreyeric/tether-qvac-solace",
     "demo_video": "https://www.youtube.com/watch?v=_V6YK6OpjPs&t",
     "live_demo": null,
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 0
   },
   {
     "project_name": "Suite",
@@ -723,7 +788,8 @@
     "github": "https://github.com/Misty-clouds/suite-local-ai.git",
     "demo_video": null,
     "live_demo": "https://suite.cloudstech.org",
-    "category": "DevTools"
+    "category": "DevTools",
+    "social_vote": 0
   },
   {
     "project_name": "Survival Co-pilot",
@@ -734,7 +800,8 @@
     "github": "https://github.com/Chriskatz/survival-copilot",
     "demo_video": "https://www.youtube.com/@hsiaochris6337",
     "live_demo": null,
-    "category": "Emergency"
+    "category": "Emergency",
+    "social_vote": 1
   },
   {
     "project_name": "Vakeel",
@@ -745,7 +812,8 @@
     "github": "https://github.com/gayatri-2219/vakeel-1",
     "demo_video": null,
     "live_demo": "https://vakeel-landing.vercel.app",
-    "category": "Legal"
+    "category": "Legal",
+    "social_vote": 0
   },
   {
     "project_name": "Vanguard",
@@ -756,7 +824,8 @@
     "github": "https://github.com/SyaugiAlkaf/vanguard",
     "demo_video": "https://www.youtube.com/watch?v=14Hl1izzAi0&feature=youtu.be",
     "live_demo": null,
-    "category": "Legal"
+    "category": "Legal",
+    "social_vote": 0
   },
   {
     "project_name": "Vitalog",
@@ -767,7 +836,8 @@
     "github": "https://github.com/Shady-web/VitalLog-App",
     "demo_video": null,
     "live_demo": null,
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 0
   },
   {
     "project_name": "Aegis — Private, Offline Health Copilot",
@@ -778,7 +848,8 @@
     "github": "https://github.com/stetang98/aegis",
     "demo_video": "https://www.youtube.com/watch?v=kms9fVN9v7Y",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 0
   },
   {
     "project_name": "Daemon",
@@ -789,7 +860,8 @@
     "github": "https://github.com/pharoxe/daemon-hive-swarm",
     "demo_video": "https://www.loom.com/share/fa60c97639b844029f0d762130d91da3",
     "live_demo": "https://daemon-agent-blond.vercel.app/",
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 1
   },
   {
     "project_name": "DeadLine Guardian",
@@ -800,7 +872,8 @@
     "github": "https://github.com/yashpunmiya/Deadline-Gaurdian",
     "demo_video": "https://www.youtube.com/watch?v=SxoFLGghoU8",
     "live_demo": null,
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 0
   },
   {
     "project_name": "future selves",
@@ -811,7 +884,8 @@
     "github": "https://github.com/thisyearnofear/futureselves",
     "demo_video": "https://www.youtube.com/shorts/8RZvAbAHfJI",
     "live_demo": null,
-    "category": "Other"
+    "category": "Other",
+    "social_vote": 0
   },
   {
     "project_name": "hiraia",
@@ -822,7 +896,8 @@
     "github": "https://github.com/helloluis/hiraia",
     "demo_video": "https://www.youtube.com/watch?v=nmoIvZcPmEE",
     "live_demo": "https://hiraia.b11.dev",
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "Kvaq",
@@ -833,7 +908,8 @@
     "github": "https://github.com/aljazceru/kvaq",
     "demo_video": "https://www.youtube.com/shorts/pzDD6g2-d3Y",
     "live_demo": null,
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 1
   },
   {
     "project_name": "Mediscan",
@@ -844,7 +920,8 @@
     "github": "https://github.com/reiisuu/mediscan",
     "demo_video": "https://www.youtube.com/watch?v=K_HJGqU5m08",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 0
   },
   {
     "project_name": "mem-it",
@@ -855,7 +932,8 @@
     "github": "https://github.com/fabianferno/mem-it",
     "demo_video": null,
     "live_demo": "https://mem-it.vercel.app",
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 1
   },
   {
     "project_name": "Memi",
@@ -866,7 +944,8 @@
     "github": "https://github.com/fozagtx/memi",
     "demo_video": "https://youtube.com/shorts/Vt6L_0xK5nM",
     "live_demo": null,
-    "category": "Creative"
+    "category": "Creative",
+    "social_vote": 0
   },
   {
     "project_name": "Memoit",
@@ -877,7 +956,8 @@
     "github": "https://github.com/Cavinee/memoit",
     "demo_video": "https://youtube.com/shorts/3IzUAc0YAOM?feature=share",
     "live_demo": null,
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 0
   },
   {
     "project_name": "Offline Field Copilot",
@@ -888,7 +968,8 @@
     "github": "https://github.com/codeproof-tech/offline-field-copilot",
     "demo_video": null,
     "live_demo": "https://localai.group/",
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 1
   },
   {
     "project_name": "PawVAC",
@@ -899,7 +980,8 @@
     "github": "https://github.com/LevanIlashvili/PawVAC",
     "demo_video": "https://www.loom.com/share/d2d1cd73cef64baaba6ab503ea3c8104",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 0
   },
   {
     "project_name": "Peek",
@@ -910,7 +992,8 @@
     "github": "https://github.com/bolajiev/peek",
     "demo_video": "https://www.youtube.com/watch?v=v1ccUeDxl0o",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "Phone Powered Decentralized AI",
@@ -921,7 +1004,8 @@
     "github": "https://github.com/AndreasGassmann/acurast-deployer-service",
     "demo_video": "https://www.youtube.com/watch?v=PkkPGcsAdEs",
     "live_demo": "https://qvac.acurast.dev/",
-    "category": "Web3"
+    "category": "Web3",
+    "social_vote": 1
   },
   {
     "project_name": "PhotoPilot with Junction Desktop",
@@ -932,7 +1016,8 @@
     "github": "https://github.com/tobiaswu/photopilot",
     "demo_video": "https://youtu.be/e0Y-j9JTjUA",
     "live_demo": null,
-    "category": "Productivity"
+    "category": "Productivity",
+    "social_vote": 0
   },
   {
     "project_name": "ResonanceAI",
@@ -943,7 +1028,8 @@
     "github": "https://github.com/Helldez/Resonance",
     "demo_video": "https://www.youtube.com/watch?v=vM0JMjOiRfg",
     "live_demo": null,
-    "category": "Privacy/Security"
+    "category": "Privacy/Security",
+    "social_vote": 0
   },
   {
     "project_name": "Stellar Field",
@@ -954,7 +1040,8 @@
     "github": "https://github.com/Rezimod/stellar-field",
     "demo_video": "https://www.youtube.com/watch?v=tNtSupP7dYc",
     "live_demo": "https://stellarr.club/field",
-    "category": "Creative"
+    "category": "Creative",
+    "social_vote": 0
   },
   {
     "project_name": "Wayfare",
@@ -965,7 +1052,8 @@
     "github": "https://github.com/prometheus-18/Wayfarer",
     "demo_video": null,
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 0
   },
   {
     "project_name": "Advocate",
@@ -976,7 +1064,8 @@
     "github": "https://github.com/ayushsingh82/Advocate",
     "demo_video": "https://drive.google.com/drive/u/1/folders/1sebdonembROHDf9m9biXmHWbLxxrzadv",
     "live_demo": null,
-    "category": "Legal"
+    "category": "Legal",
+    "social_vote": 1
   },
   {
     "project_name": "CareSwarm",
@@ -987,7 +1076,8 @@
     "github": "https://github.com/CareSwarm/careswarm",
     "demo_video": "https://www.youtube.com/watch?v=w6OD7jEVB4E",
     "live_demo": "https://careswarm-agents.vercel.app",
-    "category": "Web3"
+    "category": "Web3",
+    "social_vote": 1
   },
   {
     "project_name": "ClariMed",
@@ -998,7 +1088,8 @@
     "github": "https://github.com/yaswanthme007/clarimed",
     "demo_video": "https://youtu.be/a10Txh8jRCA?si=0V049QI6vkAkVqZf",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "HealthVault Guardian",
@@ -1009,7 +1100,8 @@
     "github": "https://github.com/jj5437/healthvault-guardian",
     "demo_video": null,
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "lifeline",
@@ -1020,7 +1112,8 @@
     "github": "https://github.com/harshdev2909/lifeline",
     "demo_video": "https://www.youtube.com/watch?v=W-lUp4plt6Y",
     "live_demo": null,
-    "category": "Emergency"
+    "category": "Emergency",
+    "social_vote": 1
   },
   {
     "project_name": "MindMirror",
@@ -1031,7 +1124,8 @@
     "github": "https://github.com/Prithiv04/MindMirror",
     "demo_video": "https://youtu.be/MX_bhgXwEMs",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 2
   },
   {
     "project_name": "MindSafe",
@@ -1042,7 +1136,8 @@
     "github": "https://github.com/The-Natri/mindsafe-qvac",
     "demo_video": "https://www.youtube.com/watch?v=OX3zr1ghaQM",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "PharmaGuard Edge",
@@ -1053,7 +1148,8 @@
     "github": "https://github.com/prakash023-hub/pharmaguard-edge",
     "demo_video": "https://youtu.be/wxa2SrKU1jE",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 0
   },
   {
     "project_name": "pigeonDoc",
@@ -1064,7 +1160,8 @@
     "github": "https://github.com/priyanshur66/PigeonDoc",
     "demo_video": "https://youtu.be/cXH7BzyZ1QM",
     "live_demo": null,
-    "category": "Emergency"
+    "category": "Emergency",
+    "social_vote": 1
   },
   {
     "project_name": "Scrubd",
@@ -1075,7 +1172,8 @@
     "github": "https://github.com/Anand-0038/scrubd.git",
     "demo_video": "https://www.loom.com/share/5f3203745ea44ecfa031ddb71995b823",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 1
   },
   {
     "project_name": "Triage Mesh",
@@ -1086,7 +1184,8 @@
     "github": "https://github.com/AtharvaWaghchoure/Triage-Mesh",
     "demo_video": "https://youtube.com/shorts/EDo9_651iQE?feature=share",
     "live_demo": null,
-    "category": "Emergency"
+    "category": "Emergency",
+    "social_vote": 1
   },
   {
     "project_name": "AuditPi: On-Device Smart Contract Security Sentinel",
@@ -1097,7 +1196,8 @@
     "github": "https://github.com/AxelNunezArzola11/auditpi",
     "demo_video": "https://youtu.be/DS_E15n6xYg",
     "live_demo": null,
-    "category": "Legal"
+    "category": "Legal",
+    "social_vote": 0
   },
   {
     "project_name": "PocketDoc",
@@ -1108,7 +1208,8 @@
     "github": "https://github.com/devbh04/pocketdoc-beagleY",
     "demo_video": "https://www.youtube.com/watch?v=RdB6BmDRI5I",
     "live_demo": null,
-    "category": "Healthcare"
+    "category": "Healthcare",
+    "social_vote": 2
   },
   {
     "project_name": "Custos",
@@ -1119,6 +1220,7 @@
     "github": "https://github.com/winsznx/custos",
     "demo_video": "https://youtu.be/iwKL3Lr6258?si=aA907k70UCl-ZosH",
     "live_demo": null,
-    "category": "Finance / Accounts Payable Automation"
+    "category": "Finance / Accounts Payable Automation",
+    "social_vote": 3
   }
 ]

@@ -9,6 +9,14 @@ window.QH = (function () {
   };
   const LINK_LABEL = { github:"GitHub", video:"Video", x:"X / Twitter", demo:"Live demo" };
 
+  // Community "thumbs up" votes, drawn as N repeated icons inline after the title.
+  const THUMB = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>';
+  function voteThumbs(p){
+    const n = (p && p.socialVote) || 0;
+    if (n <= 0) return "";
+    return `<span class="thumbs" title="${n} community vote${n===1?"":"s"}" aria-label="${n} community vote${n===1?"":"s"}">${THUMB.repeat(n)}</span>`;
+  }
+
   const D = window.HACKATHON;
   const byId = {}; (D.tracks || []).forEach(t => byId[t.id] = t);
 
@@ -45,5 +53,5 @@ window.QH = (function () {
       + `<div class="m-field"><div class="k">Category</div><div class="v">${p.category}</div></div>`;
   }
 
-  return { D, byId, ICON, LINK_LABEL, trackColor, coverHTML, linkIcons, linkButtons, categoriesIn, filterBy, detailMeta };
+  return { D, byId, ICON, LINK_LABEL, trackColor, coverHTML, linkIcons, linkButtons, categoriesIn, filterBy, detailMeta, voteThumbs };
 })();

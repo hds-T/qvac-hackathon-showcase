@@ -22,7 +22,7 @@ window.HACKATHON = {
   meta: {
     title: "QVAC Hackathon",
     edition: "Beta Edition",
-    voteOpen: true,
+    voteOpen: false,
     voteUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfZEmfyO7PniazH4uxhiYKv-nGCWefLR6wXQea0fhZ56B3UaQ/viewform",
     voteDeadline: "July 12, 2026, 23:59 UTC",
 
@@ -92,6 +92,7 @@ window.HACKATHON = {
         links,
         hasDemo: !!r.demo_video,               // demo_video -> "Video" pill + "has demo video" filter
         hasLiveDemo: !!r.live_demo,            // live_demo -> "Demo" pill
+        socialVote: Number(r.social_vote) || 0,// community "thumbs up" count -> thumbs-up icons by the title
         image: "./covers/" + id + ".jpg",     // AI cover; falls back to procedural on 404 (see coverHTML)
         image_prompt: r.image_prompt || null, // the generation prompt, kept for re-rolls
       };

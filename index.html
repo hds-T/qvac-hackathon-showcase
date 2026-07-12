@@ -76,6 +76,8 @@
   .cover .vbadge svg{width:10px;height:10px}
   .c-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:6px;flex:1}
   .c-name{font-size:16px;font-weight:600;letter-spacing:-.01em}
+  .thumbs{display:inline-flex;align-items:center;gap:1px;vertical-align:middle;margin-left:6px;color:var(--accent)}
+  .thumbs svg{width:.78em;height:.78em}
   .c-team{font-size:12.5px;color:var(--muted)}
   .c-meta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:7px}
   .c-cat{font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
@@ -120,11 +122,6 @@
   </div></header>
 
   <div class="wrap">
-    <div class="vote" id="voteBanner">
-      <div class="l"><span class="dot"></span><span class="t"><b>Voting is open.</b> <span id="voteSub"></span></span></div>
-      <a class="btn white" id="voteBtn" target="_blank" rel="noopener">Cast your vote →</a>
-    </div>
-
     <div class="shell">
       <aside class="side">
         <div class="grp" id="searchGrp">
@@ -153,16 +150,14 @@
   <script src="./core.js?v=3"></script>
   <script>
   (function(){
-    const {D,byId,coverHTML,linkIcons,linkButtons,categoriesIn,detailMeta}=QH;
+    const {D,byId,coverHTML,linkIcons,linkButtons,categoriesIn,detailMeta,voteThumbs}=QH;
     const TRACKS=D.tracks; let track="all", cat="all", demo="all", q="";
     const PLAY='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
     const LINK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7M21 3l-9 9M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg>';
+    const THUMB='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>';
     const searching=()=>q.trim()!=="";
 
     document.getElementById("edition").textContent=D.meta.edition;
-    document.getElementById("voteBtn").href=D.meta.voteUrl;
-    document.getElementById("voteSub").textContent=D.meta.voteDeadline?`Closes ${D.meta.voteDeadline}.`:"";
-    if(!D.meta.voteOpen) document.getElementById("voteBanner").hidden=true;
 
     const tl=document.getElementById("trackList"), cl=document.getElementById("catList"),
           dl=document.getElementById("demoList"), grid=document.getElementById("grid"),
@@ -173,16 +168,19 @@
     function base(){
       if(demo==="yes")  return D.projects.filter(p=>p.hasDemo);
       if(demo==="live") return D.projects.filter(p=>p.hasLiveDemo);
+      if(demo==="vote") return D.projects.filter(p=>p.socialVote>0);
       return D.projects;
     }
 
     function renderDemoList(){
       const withDemo=D.projects.filter(p=>p.hasDemo).length;
       const withLive=D.projects.filter(p=>p.hasLiveDemo).length;
+      const withVote=D.projects.filter(p=>p.socialVote>0).length;
       dl.innerHTML=
         `<button class="opt demo ${demo==="all"?'on':''}" data-d="all"><span class="nm">All projects</span><span class="ct">${D.projects.length}</span></button>`+
         `<button class="opt demo ${demo==="yes"?'on':''}" data-d="yes"><span class="pin">${PLAY}</span><span class="nm">Has demo video</span><span class="ct">${withDemo}</span></button>`+
-        `<button class="opt demo ${demo==="live"?'on':''}" data-d="live"><span class="pin">${LINK}</span><span class="nm">Has live demo</span><span class="ct">${withLive}</span></button>`;
+        `<button class="opt demo ${demo==="live"?'on':''}" data-d="live"><span class="pin">${LINK}</span><span class="nm">Has live demo</span><span class="ct">${withLive}</span></button>`+
+        `<button class="opt demo ${demo==="vote"?'on':''}" data-d="vote"><span class="pin">${THUMB}</span><span class="nm">Social vote</span><span class="ct">${withVote}</span></button>`;
       dl.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{demo=b.dataset.d;renderAll();});
     }
     function renderTrackList(){
@@ -210,14 +208,14 @@
       const t=track==="all"?null:byId[track];
       document.getElementById("resTitle").textContent = searching()
         ? `Search by "${q.trim()}"`
-        : (t?t.name:"All projects")+(cat==="all"?"":` · ${cat}`)+(demo==="yes"?" · with video":demo==="live"?" · with live demo":"");
+        : (t?t.name:"All projects")+(cat==="all"?"":` · ${cat}`)+(demo==="yes"?" · with video":demo==="live"?" · with live demo":demo==="vote"?" · with social vote":"");
       document.getElementById("resCount").textContent = `${list.length} project${list.length===1?"":"s"}`;
       if(!list.length){grid.innerHTML=`<div class="empty">${searching()?"Nothing to show":"No projects match this filter."}</div>`;return;}
       grid.innerHTML=list.map(p=>{const tt=byId[p.track];
         const border=p.hasDemo&&p.hasLiveDemo?'has-both':p.hasDemo?'has-demo':'';
         return `<article class="card ${border}" data-id="${p.id}">
           <div class="cover">${coverHTML(p)}<span class="tag"><span class="swatch" style="background:${tt.color}"></span>${tt.short}</span>${(p.hasLiveDemo||p.hasDemo)?`<span class="badges">${p.hasLiveDemo?`<span class="vbadge demo">${LINK}Demo</span>`:""}${p.hasDemo?`<span class="vbadge">${PLAY}Video</span>`:""}</span>`:""}</div>
-          <div class="c-body"><div class="c-name">${p.name}</div>${p.team?`<div class="c-team">${p.team}</div>`:""}
+          <div class="c-body"><div class="c-name">${p.name}${voteThumbs(p)}</div>${p.team?`<div class="c-team">${p.team}</div>`:""}
           <div class="c-meta"><span class="c-cat">${p.category}</span><span class="c-links">${linkIcons(p)}</span></div></div>
         </article>`;}).join("");
       grid.querySelectorAll(".card").forEach(c=>c.onclick=()=>openModal(c.dataset.id));
@@ -241,7 +239,7 @@
         <div class="m-cover">${coverHTML(p)}<button class="m-close" aria-label="Close">✕</button></div>
         <div class="m-body">
           <span class="m-tag" style="background:${t.color}22;color:${t.color}"><span style="width:7px;height:7px;border-radius:2px;background:${t.color}"></span>${t.name}</span>
-          <h2 class="m-name">${p.name}</h2><div class="m-sub">${p.team?`by ${p.team}`:""}${p.company&&p.company!==p.team?` · ${p.company}`:""}</div>
+          <h2 class="m-name">${p.name}${voteThumbs(p)}</h2><div class="m-sub">${p.team?`by ${p.team}`:""}${p.company&&p.company!==p.team?` · ${p.company}`:""}</div>
           <a class="m-perma" href="./projects/${p.id}.html">Open full project page ↗</a>
           <div class="m-grid">${detailMeta(p)}</div>
           <p class="m-desc">${p.description}</p>
