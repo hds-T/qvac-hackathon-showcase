@@ -786,7 +786,7 @@
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Suite — DevTools. terminal green on dark charcoal, code brackets and pipeline nodes, developer workspace aesthetic. Track: General Purpose. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "General Purpose",
     "github": "https://github.com/Misty-clouds/suite-local-ai.git",
-    "demo_video": null,
+    "demo_video": "https://youtu.be/RDxtsHmxwfI",
     "live_demo": "https://suite.cloudstech.org",
     "category": "DevTools",
     "social_vote": 0
@@ -930,7 +930,7 @@
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: mem — Privacy/Security. shield silhouette with encrypted data streams, matte black and electric blue, zero-trust aesthetic. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/fabianferno/mem-it",
-    "demo_video": null,
+    "demo_video": "https://canva.link/ea5wy6e447bajjm",
     "live_demo": "https://mem-it.vercel.app",
     "category": "Privacy/Security",
     "social_vote": 1
@@ -966,7 +966,7 @@
     "image_prompt": "Wide cinematic background wallpaper for a hackathon project card, no text, no logos, no people faces. Theme: Offline Field Copilot — Privacy/Security. shield silhouette with encrypted data streams, matte black and electric blue, zero-trust aesthetic. Track: Mobile. Mood: local-first on-device AI, privacy-preserving, edge computing. 16:9 aspect ratio, subtle depth of field, professional product showcase background.",
     "track": "Mobile",
     "github": "https://github.com/codeproof-tech/offline-field-copilot",
-    "demo_video": null,
+    "demo_video": "https://www.youtube.com/watch?v=IseGv6yqqZE",
     "live_demo": "https://localai.group/",
     "category": "Privacy/Security",
     "social_vote": 1

@@ -1,6 +1,6 @@
 # QVAC Hackathon Showcase
 
-A filterable gallery of the QVAC Hackathon (Beta Edition) project submissions. It is a plain static site: no framework, no backend, no build step needed just to view it.
+A filterable gallery of the QVAC Hackathon I - Unleash Edge AI project submissions. It is a plain static site: no framework, no backend, no build step needed just to view it.
 
 ## What is inside
 

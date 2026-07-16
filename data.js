@@ -21,7 +21,7 @@
 window.HACKATHON = {
   meta: {
     title: "QVAC Hackathon",
-    edition: "Beta Edition",
+    edition: "I - Unleash Edge AI",
     voteOpen: false,
     voteUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfZEmfyO7PniazH4uxhiYKv-nGCWefLR6wXQea0fhZ56B3UaQ/viewform",
     voteDeadline: "July 12, 2026, 23:59 UTC",
